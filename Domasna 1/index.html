@@ -1,1 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domasna 1</title>
+</head>
+<body>
+    <h1>Smart Home Control Panel</h1>
+    <h2>Navigation:</h2>
+    <a href="#bedroom">Bedroom</a> |
+    <a href="#living-room">Living Room</a> |
+    <a href="#kitchen">Kitchen</a> |
+    <a href="#garden">Garden</a> |
+    <a href="#notifications">Notifications</a>
 
+    <table border="1">
+        <caption><h2 id="bedroom">Bedroom</h2></caption>
+        <tr>
+            <th>Sensor</th>
+            <th>Reading</th>
+            <th>Power Status</th>
+            <th>Battery</th>
+        </tr>
+        <tr>
+            <td>Temperature</td>
+            <td><strong>22 °C</strong></td>
+            <td><input type="checkbox" checked disabled>ON</td>
+            <td>85%</td>
+        </tr>
+        <tr>
+            <td>Humidity</td>
+            <td><em>Unknown</em></td>
+            <td><input type="checkbox" disabled>OFF</td>
+            <td>72%</td>
+        </tr>
+        <tr>
+            <td>Light</td>
+            <td><meter min="0" max="300" value="92">92 lux</meter></td>
+            <td>ON</td>
+            <td>45%</td>
+            </tr>
+    </table>
+    
+    <h3>Rules:</h3>
+    <ul>
+        <li>Temperature: 18 °C &lt T &lt 23 °C</li>
+        <li>Humidity: 30% &lt H &lt 60%</li>
+        <li>Light: 50 lux &lt L &lt 300 lux</li>
+    </ul>
+
+    <table border="1">
+        <caption><h2 id="living-room">Living Room</h2></caption>
+        <tr>
+            <th>Sensor</th>
+            <th>Reading</th>
+            <th>Power Status</th>
+            <th>Battery</th>
+        </tr>
+        <tr>
+            <td>Temperature</td>
+            <td><progress>Error</progress></td>
+            <td>OFF</td>
+            <td>0%</td>
+        </tr>
+        <tr>
+            <td>Air Quality</td>
+            <td><data value="30">30 AQI</data></td>
+            <td>ON</td>
+            <td>43%</td>
+        </tr>
+        <tr>
+            <td>Air Pressure</td>
+            <td><output>Unknown</output></td>
+            <td><img src="images/switch-off.png" alt="OFF" width="35"></td>
+            <td>80%</td>
+        </tr>
+    </table>
+
+    <h3>Rules:</h3>
+    <ul>
+        <li>Temperature: 20 °C &lt T &lt 24 °C</li>
+        <li>Air Quality: 0 AQI &lt Q &lt 50 AQI</li>
+        <li>Air Pressure: 980 hPa &lt P &lt 1030 hPa</li>
+    </ul>
+
+    <table border="1">
+        <caption><h2 id="kitchen">Kitchen</h2></caption>
+        <tr>
+            <th>Sensor</th>
+            <th>Reading</th>
+            <th>Power Status</th>
+            <th>Battery</th>
+        </tr>
+        <tr>
+            <td>Temperature</td>
+            <td><abbr title="30">30 °C</abbr></td>
+            <td><img src="images/switch-on.png" alt="ON" width="35"></td>
+            <td>85%</td>
+        </tr>
+        <tr>
+            <td>Smoke</td>
+            <td><mark>High smoke detected</mark></td>
+            <td>ON</td>
+            <td>72%</td>
+        </tr>
+        <tr>
+            <td>Gas</td>
+            <td><sub>37%</sub></td>
+            <td>ON</td>
+            <td>70%</td>
+        </tr>
+    </table>
+
+    <h3>Rules:</h3>
+    <ul>
+        <li>Temperature: 21 °C &lt T &lt 27 °C</li>
+        <li>Smoke: No smoke detected</li>
+        <li>Gas: 10% &lt G &lt 50%</li>
+    </ul>
+
+    <table border="1">
+        <caption><h2 id="garden">Garden</h2></caption>
+        <tr>
+            <th>Sensor</th>
+            <th>Reading</th>
+            <th>Power Status</th>
+            <th>Battery</th>
+        </tr>
+        <tr>
+            <td>Sunlight</td>
+            <td><small>61027 lux</small></td>
+            <td>ON</td>
+            <td>85%</td>
+        </tr>
+        <tr>
+            <td>Soil Quality</td>
+            <td><code>65%</code></td>
+            <td>ON</td>
+            <td>72%</td>
+        </tr>
+        <tr>
+            <td>Radiation</td>
+            <td><samp>0.1 µSv/h</samp></td>
+            <td>ON</td>
+            <td>45%</td>
+        </tr>
+    </table>
+
+    <h3>Rules:</h3>
+    <ul>
+        <li>Sunlight: 10000 lux &lt S &lt 100000 lux</li>
+        <li>Soil Quality: 40% &lt Q &lt 70%</li>
+        <li>Radiation: 0.06 µSv/h &lt R &lt 0.2 µSv/h</li>
+    </ul>
+
+    <h2 id="notifications">Notifications:</h2>
+    <details>
+        <summary>Bedroom - Unknown humidity levels</summary>
+        <p>The humidity sensor is turned off</p>
+    </details>
+    <details>
+        <summary>Living room - Error in temps</summary>
+        <p>The temperature sensor is turned off</p>
+        <p>Temps sensor has run out of battery</p>
+    </details>
+    <details>
+        <summary>Living room - Unknown air pressure levels</summary>
+        <p>Air pressure sensor is turned off</p>
+    </details>
+    <details>
+        <summary>Kitchen - Above average temps</summary>
+        <p>Normal range is between 21 °C and 27 °C</p>
+        <p>Current temp is 30 °C</p>
+    </details>
+    <details>
+        <summary>Kitchen - High smoke detected</summary>
+        <p>Smoke is present in the kitchen - possible fire</p>
+    </details>
+    <details>
+        <summary>Garden - Excellent soil quality</summary>
+        <p>Soil quality is at 65% relative value</p>
+    </details>
+</body>
+</html>
