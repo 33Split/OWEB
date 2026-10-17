@@ -1,13 +1,11 @@
-/*.header {
-    border: 2px solid green;
-    height: 8vh;
-    width: 100vw;
-}
-*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
 }
 .layout {
     height: 100vh;
@@ -15,19 +13,18 @@
     display: flex;
 }
 .sidebar {
-    border: 2px solid navy;
+    background-color: whitesmoke;
     height: 100vh;
     width: 18vw;
     justify-content: center;
     align-items: center;
 }
 .main {
-    border: 2px solid green;
     height: 100vh;
     width: 82vw;
+    background-color: #F0F8FF;
 }
 .navigation {
-    border: 2px solid lime;
     height: 10%;
     width: 100%;
     justify-content: center;
@@ -35,7 +32,6 @@
     display: flex;
 }
 .rooms-box {
-    border: 2px solid limegreen;
     height: 90%;
     width: 100%;
     justify-content: center;
@@ -43,7 +39,6 @@
     display: flex;
 }
 .rooms-container {
-    border: 2px solid cyan;
     height: 90%;
     width: 70%;
     justify-content: top;
@@ -53,9 +48,12 @@
     gap: 3%;
 }
 .room-nav-item {
-    border: 2px solid orange;
     height: 7.5%;
-    width: 70%;
+    width: 100%;
     border-radius: 10px;
-    padding: 5.5%;
+    padding: 5%;
+}
+.room-nav-item:hover {
+    background-color: #d7ecff;
+    cursor: pointer;
 }
