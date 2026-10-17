@@ -1,1 +1,61 @@
-
+/*.header {
+    border: 2px solid green;
+    height: 8vh;
+    width: 100vw;
+}
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.layout {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+.sidebar {
+    border: 2px solid navy;
+    height: 100vh;
+    width: 18vw;
+    justify-content: center;
+    align-items: center;
+}
+.main {
+    border: 2px solid green;
+    height: 100vh;
+    width: 82vw;
+}
+.navigation {
+    border: 2px solid lime;
+    height: 10%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.rooms-box {
+    border: 2px solid limegreen;
+    height: 90%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.rooms-container {
+    border: 2px solid cyan;
+    height: 90%;
+    width: 70%;
+    justify-content: top;
+    align-items: left;
+    display: flex;
+    flex-direction: column;
+    gap: 3%;
+}
+.room-nav-item {
+    border: 2px solid orange;
+    height: 7.5%;
+    width: 70%;
+    border-radius: 10px;
+    padding: 5.5%;
+}
