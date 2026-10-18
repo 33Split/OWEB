@@ -143,13 +143,35 @@ body {
     border-color: #87CEEB;
 }
 .room-header {
-    border: solid 2px black;
     width: 100%;
     height: 13%;
     text-align: center;
 }
 .room-content {
-    border: solid 2px black;
     width: 100%;
     height: 87%;
+}
+.sensor-row {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+.sensor-box {
+    border: solid 2px cyan;
+    width: 100%;
+    height: 100%;
+}
+.rules-row {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+.rules-box {
+    border: solid 2px lime;
+    width: 100%;
+    height: 100%;
 }
