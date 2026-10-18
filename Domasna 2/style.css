@@ -17,7 +17,7 @@ body {
     display: flex;
 }
 .sidebar {
-    background-color: whitesmoke;
+    background-color: #FFFFFF;
     height: 100vh;
     width: 18%;
     justify-content: center;
@@ -25,7 +25,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 .main {
     min-height: 100vh;
@@ -88,24 +88,22 @@ body {
 }
 .room-item {
     border-radius: 15px;
+    background-color: #FFFFFF;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 .bedroom {
-    border: solid brown;
     margin-top: 2%;
     margin-left: 5%;
 }
 .living-room {  
-    border: solid green;
     margin-top: 2%;
     margin-right: 5%;
 }
 .kitchen {
-    border: solid orange;
     margin-bottom: 2%;
     margin-left: 5%;
 }
 .garden {
-    border: solid navy;
     margin-bottom: 2%;
     margin-right: 5%;
 }
@@ -125,6 +123,7 @@ body {
     width: 40%;
     margin-bottom: 1%;
     overflow: hidden;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 .notification summary {
     padding: 2%;
