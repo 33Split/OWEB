@@ -144,24 +144,41 @@ body {
 }
 .room-header {
     width: 100%;
-    height: 13%;
+    height: 15%;
     text-align: center;
 }
 .room-content {
     width: 100%;
-    height: 87%;
+    height: 85%;
 }
 .sensor-row {
     width: 100%;
     height: 70%;
-    display: flex;
-    align-items: center;
-    justify-self: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2.5%;
 }
 .sensor-box {
-    border: solid 2px cyan;
+    border-radius: 15px;
     width: 100%;
     height: 100%;
+    padding: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #F0F8FF;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.sensor-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1%;
+}
+.sensor-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .rules-row {
     width: 100%;
@@ -171,7 +188,34 @@ body {
     justify-self: center;
 }
 .rules-box {
-    border: solid 2px lime;
     width: 100%;
+    height: 100%;
+    padding: 1%;
+    text-align: center;
+}
+.rules {
+    width: 100%;
+    height: 40%;
+    text-align: left;
+}
+.rules-info {
+    width: 100%;
+    height: 60%;
+    text-align: center;
+}
+.sensor-name {
+    width: 100%;
+    height: 50%;
+}
+.sensor-reading {
+    width: 100%;
+    height: 50%;
+}
+.sensor-battery {
+    width: 78%;
+    height: 100%;
+}
+.sensor-status {
+    width: 22%;
     height: 100%;
 }
