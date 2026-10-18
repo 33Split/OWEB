@@ -57,17 +57,19 @@ body {
     gap: 0.1%;
 }
 .room-nav-item {
+    display: block;
     height: 7.5%;
     width: 100%;
     border-radius: 10px;
     padding: 6.75%;
+    color: #0B1F3A;
 }
 .room-nav-item:hover {
     background-color: #d7ecff;
     cursor: pointer;
 }
-.room-nav-item a {
-    color: #0B1F3A;
+.room-nav-item:active {
+    color: #1E90FF;
 }
 .header {
     width: 100%;
@@ -78,7 +80,6 @@ body {
     font-size: 1.2rem;
 }
 .rooms-box {
-    border: solid green;
     width: 100%;
     height: 90vh;
     display: grid;
@@ -94,7 +95,7 @@ body {
     margin-left: 5%;
 }
 .living-room {  
-    border: solid yellow;
+    border: solid green;
     margin-top: 2%;
     margin-right: 5%;
 }
@@ -104,13 +105,15 @@ body {
     margin-left: 5%;
 }
 .garden {
-    border: solid cyan;
+    border: solid navy;
     margin-bottom: 2%;
     margin-right: 5%;
 }
 .notifications {    
     width: 100%;
     padding-left: 2.5%;
+    padding-top: 0.5%;
+    padding-bottom: 1%;
 }
 .notifications h2 {
     margin-bottom: 1%;
