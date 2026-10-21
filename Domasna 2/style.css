@@ -20,8 +20,6 @@ body {
     background-color: #FFFFFF;
     height: 100vh;
     width: 18%;
-    justify-content: center;
-    align-items: center;
     position: fixed;
     top: 0;
     left: 0;
@@ -51,8 +49,8 @@ body {
 .rooms-nav-container {
     height: 100%;
     width: 70%;
-    justify-content: top;
-    align-items: left;
+    justify-content: flex-start;
+    align-items: stretch;
     display: flex;
     flex-direction: column;
     gap: 0.1%;
@@ -122,7 +120,7 @@ body {
     background-color: #FFFFFF;
     border: 1px solid #D7E8F7;
     border-radius: 10px;
-    width: 40%;
+    width: 50%;
     margin-bottom: 1%;
     overflow: hidden;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
@@ -231,6 +229,7 @@ body {
     font-size: 1.4rem;
     font-weight: 600;
     color: #0B1F3A;
+    overflow-wrap: anywhere;
 }
 .sensor-battery h4 {
     font-size: 0.7rem;
@@ -250,4 +249,8 @@ body {
 }
 .off {
     color: rgb(201, 21, 21);
+}
+.room-item,
+.notifications {
+    scroll-margin-top: 1rem;
 }
