@@ -140,6 +140,16 @@ body {
 .reset-race:hover {
     background-color: #D5DDE5;
 }
+button {
+    transition: background-color 0.15s ease, transform 0.1s ease;
+}
+button:hover {
+    filter: brightness(0.95);
+}
+button:active {
+    filter: brightness(0.85);
+    transform: scale(0.98);
+}
 
 /* Standings */
 .standings-container {
