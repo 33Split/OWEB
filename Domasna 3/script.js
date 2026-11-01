@@ -168,6 +168,7 @@ function updateSafetyCarStatus(){
     }
 }
 updateSafetyCarStatus();
+updateLaps();
 
 function resetRace(){
 
@@ -186,12 +187,46 @@ function resetRace(){
         driver.tires = driver.initialTires;
     }
     displayStandings();
-    
-
+    updateLaps();
+    clearEvents();
+    updateSafetyCarStatus();
 }
+document.getElementById("reset-race").addEventListener("click", resetRace);
 
 function updateLaps(){
-
+    
     let currentLapStatus = document.getElementById("current-lap");
-
+    currentLapStatus.textContent = currentLap + "/10";
 }
+
+function clearEvents(){
+    
+    let events = document.getElementById("events-list");
+    events.innerHTML = "";
+}
+
+function addEvent(message){
+    
+    let events = document.getElementById("events-list");
+    let event = document.createElement("li");
+
+    event.textContent = message;
+    events.appendChild(event);
+}
+
+function startRace(){
+        
+    if(raceStarted || raceFinished){
+        return;
+    }
+    raceStarted = true;
+    
+    for(let i = 0; i < drivers.length; i++){
+        let driver = drivers[i];
+        
+        driver.status = "Racing";
+    }
+    displayStandings();
+    addEvent("Race Started!");
+}
+document.getElementById("start-race").addEventListener("click", startRace);
