@@ -133,6 +133,8 @@ let drivers = [
     }
 ];
 
+let originalDrivers = [...drivers];
+
 function displayStandings(){
     
     let standingsBody = document.getElementById("standings-body");
@@ -189,6 +191,7 @@ function resetRace(){
     raceFinished = false;
     safetyCar = false;
     safetyCarLaps = 0;
+    drivers = [...originalDrivers];
 
     for(let i = 0; i < drivers.length; i++){
         let driver = drivers[i];
