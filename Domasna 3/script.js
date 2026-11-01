@@ -221,7 +221,7 @@ function addEvent(message){
     let event = document.createElement("li");
 
     event.textContent = message;
-    events.appendChild(event);
+    events.prepend(event);
 }
 
 function startRace(){
