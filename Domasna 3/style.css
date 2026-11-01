@@ -16,7 +16,7 @@ body {
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    padding-top: 2%;
 }
 .main {
     width: 60%;
@@ -27,13 +27,110 @@ body {
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 .setup-container {
-    border: solid 2px black;
     width: 100%;
     height: 50%;
+    padding: 1%;
+    border-radius: 10px;
+    border: 1px solid #D5DDE5;
+    background-color: #FFFFFF;
 }
 .header1 {
-    border: solid 2px brown;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    padding-left: 2%;
+}
+.header1 h1 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #202832;
 }
 .header2 {
-    border: solid 2px crimson;
+    width: 100%;
+    height: 17%;
+    display: flex;
+    align-items: center;
+    padding-left: 2%;
+    border-bottom: 1px solid #D5DDE5;
+}
+.header2 h2 {
+    font-size: 17px;
+    font-weight: 400;
+    color: #596775;
+}
+.ldsc-container {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 1%;
+}
+.l-box, .d-box, .sc-box {
+    width: 33.33%;
+    height: 85%;
+    text-align: center;
+}
+.l-box h3, .d-box h3, .sc-box h3 {
+    font-size: 13px;
+    font-weight: 400;
+    color: #64748B;
+}
+.ldsc-values-container {
+    width: 100%;
+    height: 18%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.l-box-value, .d-box-value, .sc-box-value {
+    width: 33.33%;
+    text-align: center;
+}
+.l-box-value p, .d-box-value p, .sc-box-value p {
+    font-size: 22px;
+    font-weight: 600;
+    color: #202832;
+}
+.sc-box-value p {
+    color: #DC3545;
+}
+.race-buttons-container {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.start-race, .next-lap, .reset-race {
+    width: 27.5%;
+    height: 70%;
+    border-radius: 6px;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.start-race {
+    background-color: #D62828;
+    color: white;
+}
+.next-lap {
+    background-color: #263746;
+    color: white;
+}
+.reset-race {
+    background-color: #E9EEF3;
+    color: #263746;
+}
+.start-race:hover {
+    background-color: #B71C1C;
+}
+.next-lap:hover {
+    background-color: #40566A;
+}
+.reset-race:hover {
+    background-color: #D5DDE5;
 }
