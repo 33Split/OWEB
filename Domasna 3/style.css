@@ -1,3 +1,4 @@
+/* General */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
 * {
@@ -28,6 +29,8 @@ body {
     background-color: #FFFFFF;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
+
+/* Setup */
 .setup-container {
     width: 100%;
     height: 220px;
@@ -193,4 +196,40 @@ body {
 .driver-team {
     font-size: 13px;
     color: #64748B;
+}
+
+/* Events */
+.events-container {
+    width: 100%;
+    border: solid 1px #D5DDE5;
+    border-radius: 10px;
+    margin-top: 1%;
+    padding: 1%;
+    background-color: #FFFFFF;
+}
+.events-header {
+    width: 100%;
+    padding: 1% 2%;
+    border-bottom: 1px solid #D5DDE5;
+}
+.events-header h2 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #596775;
+}
+.events-list {
+    width: 100%;
+    padding: 1%;
+}
+.events-list ul {
+    list-style: none;
+}
+.events-list li {
+    padding: 12px;
+    border-bottom: 1px solid #E9EEF3;
+    font-size: 14px;
+    color: #263746;
+}
+.events-list li:last-child {
+    border-bottom: none;
 }
