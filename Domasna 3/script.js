@@ -141,7 +141,7 @@ function displayStandings(){
                     </div>
                 </td>
                 <td>${driver.tires}</td>
-                <td>${driver.totalTime}</td>
+                <td>${driver.totalTime.toFixed(3)}</td>
             </tr>
         `;
         standingsBody.innerHTML += row;
@@ -222,14 +222,17 @@ function startRace(){
     raceStarted = true;
     
     for(let i = 0; i < drivers.length; i++){
-        let driver = drivers[i];
-        
-        driver.status = "Racing";
+        drivers[i].status = "Racing";
     }
     displayStandings();
     addEvent("Race Started!");
 }
 document.getElementById("start-race").addEventListener("click", startRace);
+
+function compareDrivers(a, b){
+    
+    return a.totalTime - b.totalTime;
+}
 
 function nextLap(){
 
@@ -238,10 +241,44 @@ function nextLap(){
     }
     currentLap++;
     updateLaps();
+    
+    for(let i = 0; i < drivers.length; i++){
+        let driver = drivers[i];
+        let lapTime = calculateLapTime(driver);
+        
+        driver.lastLapTime = lapTime;
+        driver.totalTime += lapTime;
+    }
+
+    drivers.sort(compareDrivers);
 
     if(currentLap === 10){
         raceFinished = true;
-        addEvent("Race Finished");
+
+        for(let i = 0; i < drivers.length; i++){
+            drivers[i].status = "Finished";
+        }
+        addEvent("Race Finished!");
+        addEvent("Winner: " + drivers[0].name);
     }
+    displayStandings();
 }
 document.getElementById("next-lap").addEventListener("click", nextLap);
+
+function calculateLapTime(driver){
+    
+    let randomOffset = Math.random() * 3 - 1.5;
+    let time = 90 - (driver.speed * 0.15) - (driver.skill * 0.05) + randomOffset;
+
+    if(driver.tires === "Soft"){
+        time *= 0.98;
+    }
+    else if(driver.tires === "Hard"){
+        time *= 1.02;
+    }
+
+    if(safetyCar){
+        time += 15;
+    }
+    return time;
+}
