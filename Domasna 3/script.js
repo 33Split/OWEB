@@ -150,6 +150,7 @@ function displayStandings(){
                         <p class="driver-team">${driver.team}</p>
                     </div>
                 </td>
+                <td>${driver.status}</td>
                 <td>${driver.tires}</td>
                 <td>${driver.totalTime.toFixed(3)}</td>
             </tr>
@@ -163,6 +164,7 @@ let currentLap = 0;
 let raceStarted = false;
 let raceFinished = false;
 let safetyCar = false;
+let safetyCarLaps = 0;
 
 function updateSafetyCarStatus(){
     
@@ -186,6 +188,7 @@ function resetRace(){
     raceStarted = false;
     raceFinished = false;
     safetyCar = false;
+    safetyCarLaps = 0;
 
     for(let i = 0; i < drivers.length; i++){
         let driver = drivers[i];
@@ -261,6 +264,9 @@ function nextLap(){
     }
     currentLap++;
     updateLaps();
+
+    checkSafetyCar();
+    updateSafetyCarStatus();
     
     for(let i = 0; i < drivers.length; i++){
         let driver = drivers[i];
@@ -272,10 +278,12 @@ function nextLap(){
 
         if(currentLap === driver.pitLap && driver.pitStops === 0){
             driver.status = "Pit Stop";
+            displayStandings();
+            addEvent(driver.name + " is making a pit stop!");
+            
             changeTires(driver);
             driver.pitStops++;
             driver.totalTime += 20;
-            addEvent(driver.name + " is making a pit stop!");
 
             driver.status = "Racing";
         }
@@ -319,9 +327,29 @@ function checkForIncident(driver){
     
     let chance = Math.random();
 
-    if(chance < 0.05){
+    if(chance <= 0.05){
         driver.status = "Spinning";
         driver.totalTime += 5;
+        
+        displayStandings();
         addEvent(driver.name + " is spinning!");
+    }
+}
+
+function checkSafetyCar(){
+
+    let chance = Math.random();
+    
+    if(safetyCar){
+        safetyCarLaps--;
+        if(safetyCarLaps === 0){
+            safetyCar = false;
+            addEvent("Safety Car has left the track!");
+        }
+    }
+    else if(chance <= 0.10){
+        safetyCar = true;
+        safetyCarLaps = 2;
+        addEvent("Safety Car has entered the track!");
     }
 }
