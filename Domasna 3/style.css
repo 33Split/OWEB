@@ -45,7 +45,7 @@ body {
     padding-left: 2%;
 }
 .header1 h1 {
-    font-size: 24px;
+    font-size: 30px;
     font-weight: 600;
     color: #202832;
 }
@@ -58,13 +58,13 @@ body {
     border-bottom: 1px solid #D5DDE5;
 }
 .header2 h2 {
-    font-size: 17px;
+    font-size: 19px;
     font-weight: 400;
     color: #596775;
 }
 .ldsc-container {
     width: 100%;
-    height: 15%;
+    height: 12%;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -72,7 +72,7 @@ body {
 }
 .l-box, .d-box, .sc-box {
     width: 33.33%;
-    height: 85%;
+    height: 70%;
     text-align: center;
 }
 .l-box h3, .d-box h3, .sc-box h3 {
@@ -139,3 +139,42 @@ body {
 }
 
 /* Standings */
+.standings-container {
+    border: solid 1px #D5DDE5;
+    border-radius: 10px;
+    margin-top: 1%;
+    padding: 1%;
+    background-color: #FFFFFF;
+}
+.standings-header {
+    width: 100%;
+    padding: 1% 2%;
+    border-bottom: 1px solid #D5DDE5;
+}
+.standings-header h2 {
+    font-size: 19px;
+    font-weight: 400;
+    color: #596775;
+}
+.standings-table {
+    width: 100%;
+    margin-top: 1%;
+}
+.standings-table table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+.standings-table th {
+    padding: 12px;
+    background-color: #F0F4F8;
+    color: #596775;
+    font-size: 13px;
+    font-weight: 600;
+}
+.standings-table td {
+    padding: 10px;
+    border-bottom: 1px solid #E9EEF3;
+    font-size: 13px;
+    color: #263746;
+}   
