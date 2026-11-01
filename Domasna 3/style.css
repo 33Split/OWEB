@@ -58,7 +58,7 @@ body {
     border-bottom: 1px solid #D5DDE5;
 }
 .header2 h2 {
-    font-size: 19px;
+    font-size: 20px;
     font-weight: 400;
     color: #596775;
 }
@@ -152,7 +152,7 @@ body {
     border-bottom: 1px solid #D5DDE5;
 }
 .standings-header h2 {
-    font-size: 19px;
+    font-size: 20px;
     font-weight: 400;
     color: #596775;
 }
@@ -169,12 +169,28 @@ body {
     padding: 12px;
     background-color: #F0F4F8;
     color: #596775;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 600;
 }
 .standings-table td {
     padding: 10px;
     border-bottom: 1px solid #E9EEF3;
-    font-size: 13px;
+    font-size: 17px;
     color: #263746;
-}   
+}
+.standings-table tr:last-child td {
+    border-bottom: none;
+}
+.driver-info {
+    text-align: left;
+    padding-left: 10%;
+}
+.driver-name {
+    font-size: 17px;
+    font-weight: 600;
+    color: #202832;
+}
+.driver-team {
+    font-size: 13px;
+    color: #64748B;
+}
