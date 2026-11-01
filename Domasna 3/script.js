@@ -11,6 +11,7 @@ let drivers = [
         totalTime: 0,
         lastLapTime: 0,
         pitStops: 0,
+        pitLap: 5,
         status: "Waiting"
     },
     {
@@ -23,6 +24,7 @@ let drivers = [
         totalTime: 0,
         lastLapTime: 0,
         pitStops: 0,
+        pitLap: 6,
         status: "Waiting"
     },
     {
@@ -35,6 +37,7 @@ let drivers = [
         totalTime: 0,
         lastLapTime: 0,
         pitStops: 0,
+        pitLap: 7,
         status: "Waiting"
     },
     {
@@ -47,6 +50,7 @@ let drivers = [
         totalTime: 0,
         lastLapTime: 0,
         pitStops: 0,
+        pitLap: 4,
         status: "Waiting"
     },
     {
@@ -59,6 +63,7 @@ let drivers = [
         totalTime: 0,
         lastLapTime: 0,
         pitStops: 0,
+        pitLap: 5,
         status: "Waiting"
     },
     {
@@ -71,6 +76,7 @@ let drivers = [
         totalTime: 0,
         lastLapTime: 0,
         pitStops: 0,
+        pitLap: 8,
         status: "Waiting"
     },
     {
@@ -83,6 +89,7 @@ let drivers = [
         totalTime: 0,
         lastLapTime: 0,
         pitStops: 0,
+        pitLap: 6,
         status: "Waiting"
     },
     {
@@ -95,6 +102,7 @@ let drivers = [
         totalTime: 0,
         lastLapTime: 0,
         pitStops: 0,
+        pitLap: 7,
         status: "Waiting"
     },
     {
@@ -107,6 +115,7 @@ let drivers = [
         totalTime: 0,
         lastLapTime: 0,
         pitStops: 0,
+        pitLap: 6,
         status: "Waiting"
     },
     {
@@ -119,6 +128,7 @@ let drivers = [
         totalTime: 0,
         lastLapTime: 0,
         pitStops: 0,
+        pitLap: 4,
         status: "Waiting"
     }
 ];
@@ -234,6 +244,16 @@ function compareDrivers(a, b){
     return a.totalTime - b.totalTime;
 }
 
+function changeTires(driver){
+
+    if(driver.tires === "Soft"){
+        driver.tires = "Hard";
+    }
+    else if(driver.tires === "Hard"){
+        driver.tires = "Soft";
+    }
+}
+
 function nextLap(){
 
     if(!raceStarted || raceFinished){
@@ -248,6 +268,16 @@ function nextLap(){
         
         driver.lastLapTime = lapTime;
         driver.totalTime += lapTime;
+
+        if(currentLap === driver.pitLap && driver.pitStops === 0){
+            driver.status = "Pit Stop";
+            changeTires(driver);
+            driver.pitStops++;
+            driver.totalTime += 20;
+            addEvent(driver.name + " is making a pit stop!");
+
+            driver.status = "Racing";
+        }
     }
 
     drivers.sort(compareDrivers);
