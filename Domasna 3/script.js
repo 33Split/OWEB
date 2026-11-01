@@ -230,3 +230,18 @@ function startRace(){
     addEvent("Race Started!");
 }
 document.getElementById("start-race").addEventListener("click", startRace);
+
+function nextLap(){
+
+    if(!raceStarted || raceFinished){
+        return;
+    }
+    currentLap++;
+    updateLaps();
+
+    if(currentLap === 10){
+        raceFinished = true;
+        addEvent("Race Finished");
+    }
+}
+document.getElementById("next-lap").addEventListener("click", nextLap);
