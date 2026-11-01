@@ -149,9 +149,11 @@ function updateSafetyCarStatus(){
     let safetyCarStatus = document.getElementById("safety-car-status");
     if(!safetyCar){
         safetyCarStatus.textContent = "OFF";
+        safetyCarStatus.style.color = "#DC3545";
     }
     else {
         safetyCarStatus.textContent = "ON";
+        safetyCarStatus.style.color = "#28A745";
     }
 }
 updateSafetyCarStatus();
