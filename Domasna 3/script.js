@@ -1,1 +1,114 @@
 "use strict";
+
+let drivers = [
+    {
+        name: "Max Verstappen",
+        team: "Red Bull Racing",
+        speed: 98,
+        skill: 97,
+        tires: "Soft",
+        totalTime: 0,
+        lastLapTime: 0,
+        pitStops: 0,
+        status: "Waiting"
+    },
+    {
+        name: "Charles Leclerc",
+        team: "Ferrari",
+        speed: 98,
+        skill: 92,
+        tires: "Hard",
+        totalTime: 0,
+        lastLapTime: 0,
+        pitStops: 0,
+        status: "Waiting"
+    },
+    {
+        name: "Lewis Hamilton",
+        team: "Ferrari",
+        speed: 91,
+        skill: 100,
+        tires: "Soft",
+        totalTime: 0,
+        lastLapTime: 0,
+        pitStops: 0,
+        status: "Waiting"
+    },
+    {
+        name: "Lando Norris",
+        team: "McLaren",
+        speed: 99,
+        skill: 93,
+        tires: "Hard",
+        totalTime: 0,
+        lastLapTime: 0,
+        pitStops: 0,
+        status: "Waiting"
+    },
+    {
+        name: "Oscar Piastri",
+        team: "McLaren",
+        speed: 98,
+        skill: 91,
+        tires: "Soft",
+        totalTime: 0,
+        lastLapTime: 0,
+        pitStops: 0,
+        status: "Waiting"
+    },
+    {
+        name: "George Russell",
+        team: "Mercedes",
+        speed: 96,
+        skill: 94,
+        tires: "Hard",
+        totalTime: 0,
+        lastLapTime: 0,
+        pitStops: 0,
+        status: "Waiting"
+    },
+    {
+        name: "Kimi Antonelli",
+        team: "Mercedes",
+        speed: 100,
+        skill: 85,
+        tires: "Soft",
+        totalTime: 0,
+        lastLapTime: 0,
+        pitStops: 0,
+        status: "Waiting"
+    },
+    {
+        name: "Fernando Alonso",
+        team: "Aston Martin",
+        speed: 88,
+        skill: 100,
+        tires: "Hard",
+        totalTime: 0,
+        lastLapTime: 0,
+        pitStops: 0,
+        status: "Waiting"
+    },
+    {
+        name: "Carlos Sainz",
+        team: "Williams",
+        speed: 94,
+        skill: 96,
+        tires: "Soft",
+        totalTime: 0,
+        lastLapTime: 0,
+        pitStops: 0,
+        status: "Waiting"
+    },
+    {
+        name: "Pierre Gasly",
+        team: "Alpine",
+        speed: 94,
+        skill: 95,
+        tires: "Hard",
+        totalTime: 0,
+        lastLapTime: 0,
+        pitStops: 0,
+        status: "Waiting"
+    }
+];
