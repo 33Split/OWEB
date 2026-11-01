@@ -266,6 +266,7 @@ function nextLap(){
         let driver = drivers[i];
         let lapTime = calculateLapTime(driver);
         
+        driver.status = "Racing";
         driver.lastLapTime = lapTime;
         driver.totalTime += lapTime;
 
@@ -278,6 +279,7 @@ function nextLap(){
 
             driver.status = "Racing";
         }
+        checkForIncident(driver);
     }
 
     drivers.sort(compareDrivers);
@@ -311,4 +313,15 @@ function calculateLapTime(driver){
         time += 15;
     }
     return time;
+}
+
+function checkForIncident(driver){
+    
+    let chance = Math.random();
+
+    if(chance < 0.05){
+        driver.status = "Spinning";
+        driver.totalTime += 5;
+        addEvent(driver.name + " is spinning!");
+    }
 }
