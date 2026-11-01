@@ -137,5 +137,21 @@ function displayStandings(){
         standingsBody.innerHTML += row;
     }
 }
-
 displayStandings();
+
+let currentLap = 0;
+let raceStarted = false;
+let raceFinished = false;
+let safetyCar = false;
+
+function updateSafetyCarStatus(){
+    
+    let safetyCarStatus = document.getElementById("safety-car-status");
+    if(!safetyCar){
+        safetyCarStatus.textContent = "OFF";
+    }
+    else {
+        safetyCarStatus.textContent = "ON";
+    }
+}
+updateSafetyCarStatus();
