@@ -112,3 +112,30 @@ let drivers = [
         status: "Waiting"
     }
 ];
+
+function displayStandings(){
+    
+    let standingsBody = document.getElementById("standings-body");
+
+    standingsBody.innerHTML = "";
+
+    for(let i = 0; i < drivers.length; i++){
+        let driver = drivers[i];
+        let row = `
+            <tr>
+                <td>${i + 1}</td>
+                <td>
+                    <div class="driver-info">
+                        <p class="driver-name">${driver.name}</p>
+                        <p class="driver-team">${driver.team}</p>
+                    </div>
+                </td>
+                <td>${driver.tires}</td>
+                <td>${driver.totalTime}</td>
+            </tr>
+        `;
+        standingsBody.innerHTML += row;
+    }
+}
+
+displayStandings();
