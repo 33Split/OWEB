@@ -7,6 +7,7 @@ let drivers = [
         speed: 98,
         skill: 97,
         tires: "Soft",
+        initialTires: "Soft",
         totalTime: 0,
         lastLapTime: 0,
         pitStops: 0,
@@ -18,6 +19,7 @@ let drivers = [
         speed: 98,
         skill: 92,
         tires: "Hard",
+        initialTires: "Hard",
         totalTime: 0,
         lastLapTime: 0,
         pitStops: 0,
@@ -29,6 +31,7 @@ let drivers = [
         speed: 91,
         skill: 100,
         tires: "Soft",
+        initialTires: "Soft",
         totalTime: 0,
         lastLapTime: 0,
         pitStops: 0,
@@ -40,6 +43,7 @@ let drivers = [
         speed: 99,
         skill: 93,
         tires: "Hard",
+        initialTires: "Hard",
         totalTime: 0,
         lastLapTime: 0,
         pitStops: 0,
@@ -51,6 +55,7 @@ let drivers = [
         speed: 98,
         skill: 91,
         tires: "Soft",
+        initialTires: "Soft",
         totalTime: 0,
         lastLapTime: 0,
         pitStops: 0,
@@ -62,6 +67,7 @@ let drivers = [
         speed: 96,
         skill: 94,
         tires: "Hard",
+        initialTires: "Hard",
         totalTime: 0,
         lastLapTime: 0,
         pitStops: 0,
@@ -73,6 +79,7 @@ let drivers = [
         speed: 100,
         skill: 85,
         tires: "Soft",
+        initialTires: "Soft",
         totalTime: 0,
         lastLapTime: 0,
         pitStops: 0,
@@ -84,6 +91,7 @@ let drivers = [
         speed: 88,
         skill: 100,
         tires: "Hard",
+        initialTires: "Hard",
         totalTime: 0,
         lastLapTime: 0,
         pitStops: 0,
@@ -95,6 +103,7 @@ let drivers = [
         speed: 94,
         skill: 96,
         tires: "Soft",
+        initialTires: "Soft",
         totalTime: 0,
         lastLapTime: 0,
         pitStops: 0,
@@ -106,6 +115,7 @@ let drivers = [
         speed: 94,
         skill: 95,
         tires: "Hard",
+        initialTires: "Hard",
         totalTime: 0,
         lastLapTime: 0,
         pitStops: 0,
@@ -147,6 +157,7 @@ let safetyCar = false;
 function updateSafetyCarStatus(){
     
     let safetyCarStatus = document.getElementById("safety-car-status");
+
     if(!safetyCar){
         safetyCarStatus.textContent = "OFF";
         safetyCarStatus.style.color = "#DC3545";
@@ -157,3 +168,30 @@ function updateSafetyCarStatus(){
     }
 }
 updateSafetyCarStatus();
+
+function resetRace(){
+
+    currentLap = 0;
+    raceStarted = false;
+    raceFinished = false;
+    safetyCar = false;
+
+    for(let i = 0; i < drivers.length; i++){
+        let driver = drivers[i];
+
+        driver.totalTime = 0;
+        driver.lastLapTime = 0;
+        driver.pitStops = 0;
+        driver.status = "Waiting";
+        driver.tires = driver.initialTires;
+    }
+    displayStandings();
+    
+
+}
+
+function updateLaps(){
+
+    let currentLapStatus = document.getElementById("current-lap");
+
+}
