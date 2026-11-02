@@ -286,14 +286,11 @@ function nextLap(){
 
         if(currentLap === driver.pitLap && driver.pitStops === 0){
             driver.status = "Pit Stop";
-            displayStandings();
             addEvent(driver.name + " is making a pit stop!");
             
             changeTires(driver);
             driver.pitStops++;
             driver.totalTime += 20;
-
-            driver.status = "Racing";
         }
         checkForIncident(driver);
     }
@@ -340,7 +337,6 @@ function checkForIncident(driver){
         driver.status = "Spinning";
         driver.totalTime += 5;
         
-        displayStandings();
         addEvent(driver.name + " is spinning!");
     }
 }
