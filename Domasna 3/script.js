@@ -168,6 +168,10 @@ let raceFinished = false;
 let safetyCar = false;
 let safetyCarLaps = 0;
 
+let overlay = document.getElementById("overlay");
+let winnerName = document.getElementById("winner-name");
+let closeButton = document.getElementById("close-btn");
+
 function updateSafetyCarStatus(){
     
     let safetyCarStatus = document.getElementById("safety-car-status");
@@ -192,6 +196,7 @@ function resetRace(){
     safetyCar = false;
     safetyCarLaps = 0;
     drivers = [...originalDrivers];
+    overlay.style.display = "none";
 
     for(let i = 0; i < drivers.length; i++){
         let driver = drivers[i];
@@ -303,6 +308,7 @@ function nextLap(){
         }
         addEvent("Race Finished!");
         addEvent("Winner: " + drivers[0].name);
+        showWinner();
     }
     displayStandings();
 }
@@ -356,3 +362,12 @@ function checkSafetyCar(){
         addEvent("Safety Car has entered the track!");
     }
 }
+
+function showWinner(){
+
+    winnerName.textContent = drivers[0].name;
+    overlay.style.display = "flex";
+}
+closeButton.addEventListener("click", function(){
+    overlay.style.display = "none";
+});
