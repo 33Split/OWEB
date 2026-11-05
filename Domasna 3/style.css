@@ -177,6 +177,7 @@ button:active {
     width: 100%;
     border-collapse: collapse;
     text-align: center;
+    table-layout: fixed;
 }
 .standings-table th {
     padding: 12px;
@@ -193,6 +194,25 @@ button:active {
 }
 .standings-table tr:last-child td {
     border-bottom: none;
+}
+.standings-table th:nth-child(1),
+.standings-table td:nth-child(1) {
+    width: 14%;
+}
+.standings-table th:nth-child(2),
+.standings-table td:nth-child(2) {
+    width: 34%;
+}
+.standings-table th:nth-child(3),
+.standings-table td:nth-child(3) {
+    width: 18%;
+}
+.standings-table th:nth-child(4),
+.standings-table td:nth-child(4) {
+    width: 14%;
+}
+.standings-table td:nth-child(5) {
+    width: 20%;
 }
 .driver-info {
     text-align: left;
