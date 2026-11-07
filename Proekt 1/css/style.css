@@ -7,15 +7,84 @@
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
 }
+.navbar {
+    width: 100%;
+    height: 65px;
+}
+.navbar-brand {
+    font-weight: 600;
+    font-size: 25px;
+}
+.nav-item {
+    font-size: 18px;
+    padding: 12px;
+}
 .hero {
     width: 100%;
-    height: 550px;
+    height: 500px;
     background-image: url("../images/hero.jpg");
     background-size: cover;
     background-position: center;
 }
 .hero-content {
-    padding: 100px;
+    padding: 110px;
     color: white;
-    font-size: x-large;
+    font-size: 27px;
+}
+.hero h1 {
+    font-weight: 1000;
+    font-size: 70px;
+}
+.popular-destinations {
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+.popular-destinations h2 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.popular-destinations p {
+    color: #777;
+    margin-bottom: 30px;
+}
+.destination-card {
+    height: 250px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+.destination-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.destination-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    color: white;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+}
+.destination-overlay h5 {
+    margin-bottom: 3px;
+    font-weight: 600;
+}
+.destination-overlay p {
+    margin: 0;
+    color: white;
+}
+.destination-card:hover {
+    transform: translateY(-5px);
+}
+.destination-link {
+    color: inherit;
+    text-decoration: none;
+}
+.destination-link:hover {
+    color: inherit;
+    text-decoration: none;
 }
