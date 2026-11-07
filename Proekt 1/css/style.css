@@ -36,7 +36,7 @@
     font-size: 70px;
 }
 .popular-destinations {
-    padding-top: 60px;
+    padding-top: 30px;
     padding-bottom: 20px;
 }
 .popular-destinations h2 {
@@ -87,4 +87,35 @@
 .destination-link:hover {
     color: inherit;
     text-decoration: none;
+}
+.footer {
+    background-color: #202b38;
+    color: white;
+    padding: 18px 0 8px;
+    margin-top: 40px;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer h5 {
+    font-size: 17px;
+    font-weight: 600;
+    margin: 0;
+}
+.footer-links a {
+    color: #b5bdc5;
+    font-size: 13px;
+    margin-left: 18px;
+    text-decoration: none;
+}
+.footer-links a:hover {
+    color: white;
+}
+.footer .copyright {
+    text-align: center;
+    color: #89939e;
+    font-size: 11px;
+    margin: 12px 0 0;
 }
