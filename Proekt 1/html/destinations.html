@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Planner</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="../js/main.js" defer></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">Travel Planner</a>
+
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="destinations.html">Destinations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="guides.html">Guides</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="survey.html">Survey</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-toggle="modal" data-target="#loginModal">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="destinations-header">
+        <div class="container">
+            <h1>Explore Destinations</h1>
+            <p>Discover new places and find your next adventure.</p>
+            <div class="destination-search">
+                <input type="text" id="destination-search" placeholder="Search for a destination...">
+                <button type="button">Search</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="destination-controls container">
+        <div class="destination-categories">
+            <button class="category-btn active" data-category="all">All</button>
+            <button class="category-btn" data-category="city">Cities</button>
+            <button class="category-btn" data-category="beach">Beaches</button>
+            <button class="category-btn" data-category="nature">Nature</button>
+            <button class="category-btn" data-category="historical">Historical</button>
+            <button class="category-btn" data-category="adventure">Adventure</button>
+        </div>
+
+        <div class="destination-sort">
+            <label for="sort-destinations">Sort by:</label>
+            <select id="sort-destinations">
+                <option value="popularity">Popularity</option>
+                <option value="price-asc">Price: Low to High</option>
+                <option value="price-desc">Price: High to Low</option>
+                <option value="name">Name: A-Z</option>
+            </select>
+        </div>
+    </section>
+
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content login-modal">
+                
+                <div class="modal-header">
+                    <h5 class="modal-title">Welcome Back</h5>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <p class="login-description">Login to continue planning your next adventure.</p>
+
+                    <form id="login-form">
+                        <div class="form-group">
+                            <label for="login-email">Email Address</label>
+                            <input type="email" class="form-control" id="login-email"
+                                placeholder="Enter your email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="login-password">Password</label>
+                            <input type="password" class="form-control" id="login-password"
+                                placeholder="Enter your password" required>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block login-button">
+                            Login
+                        </button>
+                    </form>
+
+                    <p class="signup-text">
+                        Don't have an account? <a href="#">Sign up</a>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
