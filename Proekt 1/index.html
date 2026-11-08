@@ -14,7 +14,6 @@
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
             <a class="navbar-brand" href="index.html">Travel Planner</a>
-
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                     <a class="nav-link active" href="index.html">Home</a>
@@ -48,55 +47,74 @@
                 <h2>Popular Destinations</h2>
                 <p>Explore some of the world's most beautiful places.</p>
             </div>
-
-            <a href="html/destinations.html" class="explore-link">
-                Explore More Destinations &rarr;
-            </a>
+            <a href="html/destinations.html" class="explore-link">Explore More Destinations &rarr;</a>
         </div>
+
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-3 mb-4">
                 <a href="html/destination.html?id=1" class="destination-link">
                     <div class="destination-card">
-                        <img src="images/paris.jpg" alt="Paris">
-                        <div class="destination-overlay">
-                            <h5>Paris</h5>
-                            <p>France</p>
+                        <div class="destination-image">
+                            <img src="images/paris.jpg" alt="Paris">
+                            <div class="destination-overlay">
+                                <h5>Paris</h5>
+                                <p>France</p>
+                            </div>
+                        </div>
+                        <div class="destination-card-info">
+                            <span>From €450</span>
+                            <span>125 likes</span>
                         </div>
                     </div>
                 </a>
             </div>
-
-            <div class="col-md-3">
+            <div class="col-md-3 mb-4">
                 <a href="html/destination.html?id=2" class="destination-link">
                     <div class="destination-card">
-                        <img src="images/rome.jpg" alt="Rome">
-                        <div class="destination-overlay">
-                            <h5>Rome</h5>
-                            <p>Italy</p>
+                        <div class="destination-image">
+                            <img src="images/rome.jpg" alt="Rome">
+                            <div class="destination-overlay">
+                                <h5>Rome</h5>
+                                <p>Italy</p>
+                            </div>
+                        </div>
+                        <div class="destination-card-info">
+                            <span>From €400</span>
+                            <span>98 likes</span>
                         </div>
                     </div>
                 </a>
             </div>
-
-            <div class="col-md-3">
+            <div class="col-md-3 mb-4">
                 <a href="html/destination.html?id=3" class="destination-link">
                     <div class="destination-card">
-                        <img src="images/tokyo.jpg" alt="Tokyo">
-                        <div class="destination-overlay">
-                            <h5>Tokyo</h5>
-                            <p>Japan</p>
+                        <div class="destination-image">
+                            <img src="images/tokyo.jpg" alt="Tokyo">
+                            <div class="destination-overlay">
+                                <h5>Tokyo</h5>
+                                <p>Japan</p>
+                            </div>
+                        </div>
+                        <div class="destination-card-info">
+                            <span>From €800</span>
+                            <span>150 likes</span>
                         </div>
                     </div>
                 </a>
             </div>
-
-            <div class="col-md-3">
+            <div class="col-md-3 mb-4">
                 <a href="html/destination.html?id=4" class="destination-link">
                     <div class="destination-card">
-                        <img src="images/santorini.jpg" alt="Santorini">
-                        <div class="destination-overlay">
-                            <h5>Santorini</h5>
-                            <p>Greece</p>
+                        <div class="destination-image">
+                            <img src="images/santorini.jpg" alt="Santorini">
+                            <div class="destination-overlay">
+                                <h5>Santorini</h5>
+                                <p>Greece</p>
+                            </div>
+                        </div>
+                        <div class="destination-card-info">
+                            <span>From €550</span>
+                            <span>110 likes</span>
                         </div>
                     </div>
                 </a>
@@ -107,9 +125,7 @@
     <section class="featured-guide container">
         <div class="row align-items-center">
             <div class="col-md-6">
-                <img src="images/kyoto1.jpg"
-                    alt="Kyoto"
-                    class="featured-guide-image">
+                <img src="images/kyoto1.jpg" alt="Kyoto" class="featured-guide-image">
             </div>
             <div class="col-md-6">
                 <div class="featured-guide-content">
@@ -119,9 +135,7 @@
                         Explore ancient temples, peaceful gardens and traditional
                         streets in Japan's historic cultural capital.
                     </p>
-                    <a href="html/guides.html" class="guide-link">
-                        Read the Guide &rarr;
-                    </a>
+                    <a href="html/guides.html" class="guide-link">Read the Guide &rarr;</a>
                 </div>
             </div>
         </div>
@@ -131,7 +145,6 @@
         <div class="container">
             <div class="footer-content">
                 <h5>Travel Planner</h5>
-
                 <div class="footer-links">
                     <a href="index.html">Home</a>
                     <a href="html/destinations.html">Destinations</a>
@@ -139,7 +152,6 @@
                     <a href="html/survey.html">Survey</a>
                 </div>
             </div>
-
             <p class="copyright">&copy; 2026 Travel Planner. All rights reserved.</p>
         </div>
     </footer>
@@ -147,7 +159,7 @@
     <div class="modal fade" id="loginModal" tabindex="-1" role="dialog">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content login-modal">
-                
+
                 <div class="modal-header">
                     <h5 class="modal-title">Welcome Back</h5>
                     <button type="button" class="close" data-dismiss="modal">
@@ -157,7 +169,6 @@
 
                 <div class="modal-body">
                     <p class="login-description">Login to continue planning your next adventure.</p>
-
                     <form id="login-form">
                         <div class="form-group">
                             <label for="login-email">Email Address</label>
@@ -170,12 +181,8 @@
                             <input type="password" class="form-control" id="login-password"
                                 placeholder="Enter your password" required>
                         </div>
-
-                        <button type="submit" class="btn btn-primary btn-block login-button">
-                            Login
-                        </button>
+                        <button type="submit" class="btn btn-primary btn-block login-button">Login</button>
                     </form>
-
                     <p class="signup-text">
                         Don't have an account? <a href="#">Sign up</a>
                     </p>
