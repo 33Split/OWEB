@@ -1,0 +1,210 @@
+/* Destinations Header */
+.destinations-header {
+    background-color: #f0f8ff;
+    padding: 50px 0;
+    text-align: center;
+}
+.destinations-header h1 {
+    font-size: 38px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.destinations-header p {
+    color: #777;
+    margin-bottom: 25px;
+}
+.destination-search {
+    display: flex;
+    max-width: 550px;
+    margin: 0 auto;
+}
+.destination-search input {
+    flex: 1;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px 0 0 6px;
+    outline: none;
+    font-size: 14px;
+}
+.destination-search button {
+    padding: 12px 25px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 0 6px 6px 0;
+    cursor: pointer;
+}
+.destination-search button:hover {
+    background-color: #0056b3;
+}
+
+/* Destination Controls */
+.destination-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 25px;
+}
+.destination-categories {
+    display: flex;
+    gap: 10px;
+}
+.category-btn {
+    padding: 8px 16px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    background-color: white;
+    color: #555;
+    font-size: 13px;
+    cursor: pointer;
+}
+.category-btn:hover {
+    background-color: #f0f8ff;
+    border-color: #007bff;
+}
+.category-btn.active {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: white;
+}
+.destination-sort {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.destination-sort label {
+    margin: 0;
+    font-size: 13px;
+    color: #555;
+}
+.destination-sort select {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: white;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+/* Destinations List */
+.destinations-list {
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+.destinations-list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.destinations-list-header h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.destinations-list-header p {
+    color: #777;
+    margin-bottom: 0;
+}
+.add-destination-btn {
+    padding: 10px 18px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 13px;
+    cursor: pointer;
+}
+.add-destination-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Destination Cards */
+.destinations-list .destination-card {
+    height: auto;
+}
+.destinations-list .destination-image {
+    height: 220px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.destinations-list .destination-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.destinations-list .destination-card-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    font-size: 12px;
+    color: #666;
+}
+
+/* Travel Cost Calculator */
+.travel-calculator {
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+.travel-calculator-content {
+    background-color: #f0f8ff;
+    border-radius: 10px;
+    padding: 35px;
+}
+.travel-calculator h2 {
+    text-align: center;
+    font-size: 27px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.travel-calculator-content > p {
+    text-align: center;
+    color: #777;
+    margin-bottom: 30px;
+}
+.travel-calculator-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px 20px;
+}
+.travel-calculator .form-group {
+    margin-bottom: 5px;
+}
+.travel-calculator label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+.travel-calculator input,
+.travel-calculator select {
+    width: 100%;
+    height: 42px;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: white;
+    font-size: 14px;
+}
+#calculate-travel-cost {
+    display: block;
+    margin: 25px auto 0;
+    padding: 11px 22px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+}
+#calculate-travel-cost:hover {
+    background-color: #0056b3;
+}
+#travel-cost-results {
+    margin-top: 25px;
+    text-align: center;
+    color: #555;
+    font-size: 14px;
+}
