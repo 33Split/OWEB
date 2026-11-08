@@ -55,6 +55,24 @@
     overflow: hidden;
     transition: transform 0.3s;
 }
+.destination-section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.destination-section-header p {
+    margin-bottom: 0;
+}
+.explore-link {
+    color: #007bff;
+    font-weight: 600;
+    font-size: 14px;
+}
+.explore-link:hover {
+    color: #0056b3;
+    text-decoration: none;
+}
 .destination-card img {
     width: 100%;
     height: 100%;
@@ -86,6 +104,44 @@
 }
 .destination-link:hover {
     color: inherit;
+    text-decoration: none;
+}
+.featured-guide {
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+.featured-guide-image {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.featured-guide-content {
+    padding: 30px;
+}
+.guide-label {
+    color: #007bff;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.featured-guide-content h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.featured-guide-content p {
+    color: #777;
+    line-height: 1.7;
+}
+.guide-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: #007bff;
+    font-weight: 600;
+}
+.guide-link:hover {
+    color: #0056b3;
     text-decoration: none;
 }
 .footer {
