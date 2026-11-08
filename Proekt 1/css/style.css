@@ -176,3 +176,144 @@
     font-size: 11px;
     margin: 12px 0 0;
 }
+
+/* Login Modal */
+.modal-backdrop.show {
+    opacity: 0.6;
+    backdrop-filter: blur(5px);
+}
+.login-modal {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.login-modal .modal-header {
+    padding: 25px 30px 10px;
+    border-bottom: none;
+}
+.login-modal .modal-title {
+    font-size: 25px;
+    font-weight: 600;
+}
+.login-modal .modal-body {
+    padding: 10px 30px 30px;
+}
+.login-description {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+.login-modal label {
+    font-size: 14px;
+    font-weight: 600;
+}
+.login-modal .form-control {
+    height: 45px;
+    font-size: 14px;
+    border-radius: 6px;
+}
+.login-button {
+    height: 45px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.signup-text {
+    text-align: center;
+    font-size: 13px;
+    color: #777;
+    margin-top: 25px;
+    margin-bottom: 0;
+}
+.signup-text a {
+    color: #007bff;
+    font-weight: 600;
+}
+
+/* Destinations Header */
+.destinations-header {
+    background-color: #f0f8ff;
+    padding: 50px 0;
+    text-align: center;
+}
+.destinations-header h1 {
+    font-size: 38px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.destinations-header p {
+    color: #777;
+    margin-bottom: 25px;
+}
+.destination-search {
+    display: flex;
+    max-width: 550px;
+    margin: 0 auto;
+}
+.destination-search input {
+    flex: 1;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px 0 0 6px;
+    outline: none;
+    font-size: 14px;
+}
+.destination-search button {
+    padding: 12px 25px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 0 6px 6px 0;
+    cursor: pointer;
+}
+.destination-search button:hover {
+    background-color: #0056b3;
+}
+
+/* Destination Controls */
+.destination-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 25px;
+}
+.destination-categories {
+    display: flex;
+    gap: 10px;
+}
+.category-btn {
+    padding: 8px 16px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    background-color: white;
+    color: #555;
+    font-size: 13px;
+    cursor: pointer;
+}
+.category-btn:hover {
+    background-color: #f0f8ff;
+    border-color: #007bff;
+}
+.category-btn.active {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: white;
+}
+.destination-sort {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.destination-sort label {
+    margin: 0;
+    font-size: 13px;
+    color: #555;
+}
+.destination-sort select {
+    padding: 8px 12px;
+    border: 1px solid #ddd; 
+    border-radius: 6px;
+    background-color: white;
+    font-size: 13px;
+    cursor: pointer;
+}
