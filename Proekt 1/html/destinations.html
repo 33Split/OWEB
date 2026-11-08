@@ -14,7 +14,6 @@
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
             <a class="navbar-brand" href="../index.html">Travel Planner</a>
-
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="../index.html">Home</a>
@@ -46,24 +45,112 @@
         </div>
     </section>
 
-    <section class="destination-controls container">
-        <div class="destination-categories">
-            <button class="category-btn active" data-category="all">All</button>
-            <button class="category-btn" data-category="city">Cities</button>
-            <button class="category-btn" data-category="beach">Beaches</button>
-            <button class="category-btn" data-category="nature">Nature</button>
-            <button class="category-btn" data-category="historical">Historical</button>
-            <button class="category-btn" data-category="adventure">Adventure</button>
+    <section class="destinations-list container">
+        <div class="destinations-list-header">
+            <div>
+                <h2>All Destinations</h2>
+                <p>Find the perfect place for your next trip.</p>
+            </div>
+            <button class="add-destination-btn">+ Add Destination</button>
         </div>
 
-        <div class="destination-sort">
-            <label for="sort-destinations">Sort by:</label>
-            <select id="sort-destinations">
-                <option value="popularity">Popularity</option>
-                <option value="price-asc">Price: Low to High</option>
-                <option value="price-desc">Price: High to Low</option>
-                <option value="name">Name: A-Z</option>
-            </select>
+        <div class="row">
+            <div class="col-md-3 mb-4">
+                <div class="destination-item"
+                    data-id="1"
+                    data-category="city"
+                    data-price="450"
+                    data-likes="125"
+                    data-dislikes="12">
+                    <a href="destination.html?id=1" class="destination-link">
+                        <div class="destination-card">
+                            <div class="destination-image">
+                                <img src="../images/paris.jpg" alt="Paris">
+                                <div class="destination-overlay">
+                                    <h5>Paris</h5>
+                                    <p>France</p>
+                                </div>
+                            </div>
+                            <div class="destination-card-info">
+                                <span>From €450</span>
+                                <span>125 likes</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="destination-item"
+                    data-id="2"
+                    data-category="historical"
+                    data-price="400"
+                    data-likes="98"
+                    data-dislikes="8">
+                    <a href="destination.html?id=2" class="destination-link">
+                        <div class="destination-card">
+                            <div class="destination-image">
+                                <img src="../images/rome.jpg" alt="Rome">
+                                <div class="destination-overlay">
+                                    <h5>Rome</h5>
+                                    <p>Italy</p>
+                                </div>
+                            </div>
+                            <div class="destination-card-info">
+                                <span>From €400</span>
+                                <span>98 likes</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="destination-item"
+                    data-id="3"
+                    data-category="city"
+                    data-price="800"
+                    data-likes="150"
+                    data-dislikes="15">
+                    <a href="destination.html?id=3" class="destination-link">
+                        <div class="destination-card">
+                            <div class="destination-image">
+                                <img src="../images/tokyo.jpg" alt="Tokyo">
+                                <div class="destination-overlay">
+                                    <h5>Tokyo</h5>
+                                    <p>Japan</p>
+                                </div>
+                            </div>
+                            <div class="destination-card-info">
+                                <span>From €800</span>
+                                <span>150 likes</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="destination-item"
+                    data-id="4"
+                    data-category="beach"
+                    data-price="550"
+                    data-likes="110"
+                    data-dislikes="5">
+                    <a href="destination.html?id=4" class="destination-link">
+                        <div class="destination-card">
+                            <div class="destination-image">
+                                <img src="../images/santorini.jpg" alt="Santorini">
+                                <div class="destination-overlay">
+                                    <h5>Santorini</h5>
+                                    <p>Greece</p>
+                                </div>
+                            </div>
+                            <div class="destination-card-info">
+                                <span>From €550</span>
+                                <span>110 likes</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -80,7 +167,6 @@
 
                 <div class="modal-body">
                     <p class="login-description">Login to continue planning your next adventure.</p>
-
                     <form id="login-form">
                         <div class="form-group">
                             <label for="login-email">Email Address</label>
@@ -93,12 +179,8 @@
                             <input type="password" class="form-control" id="login-password"
                                 placeholder="Enter your password" required>
                         </div>
-
-                        <button type="submit" class="btn btn-primary btn-block login-button">
-                            Login
-                        </button>
+                        <button type="submit" class="btn btn-primary btn-block login-button">Login</button>
                     </form>
-
                     <p class="signup-text">
                         Don't have an account? <a href="#">Sign up</a>
                     </p>
