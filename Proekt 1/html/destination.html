@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Planner</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/destination.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="../js/main.js" defer></script>
+    <script src="../js/destination.js" defer></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">Travel Planner</a>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="destinations.html">Destinations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="guides.html">Guides</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="survey.html">Survey</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-toggle="modal" data-target="#loginModal">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="destination-hero">
+        <div class="destination-hero-overlay">
+            <div class="container destination-hero-content">
+                <p class="destination-country" id="destination-country">France</p>
+                <h1 id="destination-name">Paris</h1>
+                <p class="destination-intro" id="destination-intro">
+                    Discover the city of lights, famous landmarks, charming streets,
+                    and unforgettable experiences.
+                </p>
+                <a href="#attractions" class="btn btn-primary">Explore Attractions</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="destination-overview">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 overview-description">
+                    <h2>Discover Paris</h2>
+                    <p>
+                        Paris, the capital of France, is one of the most popular
+                        travel destinations in the world. Known for its beautiful
+                        architecture, historic landmarks, museums and charming
+                        streets, the city offers something for every visitor.
+                    </p>
+                    <p>
+                        From exploring the Eiffel Tower and the Louvre Museum
+                        to enjoying a walk along the Seine River, Paris combines
+                        history, culture and modern city life. Its cafes, restaurants
+                        and shopping streets also make it a great destination
+                        for anyone looking to experience French culture.
+                    </p>
+                </div>
+                <div class="col-lg-5">
+                    <div class="overview-info">
+                        <h4>Travel Information</h4>
+
+                        <div class="overview-info-item">
+                            <span>Country</span>
+                            <strong>France</strong>
+                        </div>
+
+                        <div class="overview-info-item">
+                            <span>Language</span>
+                            <strong>French</strong>
+                        </div>
+
+                        <div class="overview-info-item">
+                            <span>Currency</span>
+                            <strong>Euro (EUR)</strong>
+                        </div>
+
+                        <div class="overview-info-item">
+                            <span>Best Time to Visit</span>
+                            <strong>April - June</strong>
+                        </div>
+
+                        <div class="overview-info-item">
+                            <span>Estimated Daily Budget</span>
+                            <strong>€100 - €150</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="destination-attractions" id="attractions">
+        <div class="container">
+            <div class="attractions-header">
+                <h2>Popular Attractions</h2>
+                <p>Discover some of the most famous places worth visiting in Paris.</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="attraction-card">
+                        <div class="attraction-image">
+                            <img src="../images/destinations/paris/eiffel-tower.jpg" alt="Eiffel Tower">
+                        </div>
+                        <div class="attraction-content">
+                            <h5>Eiffel Tower</h5>
+                            <p>
+                                One of the world's most recognizable landmarks,
+                                offering incredible views of Paris.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="attraction-card">
+                        <div class="attraction-image">
+                            <img src="../images/destinations/paris/louvre.jpg" alt="Louvre Museum">
+                        </div>
+                        <div class="attraction-content">
+                            <h5>Louvre Museum</h5>
+                            <p>
+                                A world-famous museum home to thousands of works
+                                of art, including the Mona Lisa.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="attraction-card">
+                        <div class="attraction-image">
+                            <img src="../images/destinations/paris/notre-dame.jpg" alt="Notre-Dame Cathedral">
+                        </div>
+                        <div class="attraction-content">
+                            <h5>Notre-Dame Cathedral</h5>
+                            <p>
+                                A historic Gothic cathedral known for its
+                                architecture and cultural significance.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="attraction-card">
+                        <div class="attraction-image">
+                            <img src="../images/destinations/paris/arc-de-triomphe.webp" alt="Arc de Triomphe">
+                        </div>
+                        <div class="attraction-content">
+                            <h5>Arc de Triomphe</h5>
+                            <p>
+                                A monumental arch commemorating French history,
+                                located at the end of the Champs-Elysees.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="destination-rating">
+        <div class="container">
+            <div class="rating-content">
+                <h2>Did You Like This Destination?</h2>
+                <p>Share your opinion and let other travelers know what you think.</p>
+
+                <div class="rating-buttons">
+                    <button type="button" class="rating-btn like-btn" id="like-button">
+                        <span>&#128077;</span>
+                        Like
+                        <span class="rating-count" id="like-count">125</span>
+                    </button>
+
+                    <button type="button" class="rating-btn dislike-btn" id="dislike-button">
+                        <span>&#128078;</span>
+                        Dislike
+                        <span class="rating-count" id="dislike-count">12</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="destination-comments">
+        <div class="container">
+            <h2>Traveler Comments</h2>
+            <p class="comments-description">Share your experience or read what other travelers have to say.</p>
+            <div class="comment-form-container">
+                <h4>Leave a Comment</h4>
+                <form id="comment-form">
+                    <div class="form-group">
+                        <label for="comment-name">Your Name</label>
+                        <input type="text" class="form-control" id="comment-name"
+                            placeholder="Enter your name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="comment-text">Your Comment</label>
+                        <textarea class="form-control" id="comment-text"
+                            rows="4" placeholder="Share your thoughts about this destination..."
+                            required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary comment-submit">Post Comment</button>
+                </form>
+            </div>
+            <div class="comments-list" id="comments-list">
+                <h4>Recent Comments</h4>
+                <div class="comment-item">
+                    <div class="comment-header">
+                        <strong>Alex</strong>
+                        <span>November 5, 2026</span>
+                    </div>
+                    <p>
+                        Paris was absolutely beautiful! The Eiffel Tower at night
+                        was definitely my favorite experience.
+                    </p>
+                </div>
+                <div class="comment-item">
+                    <div class="comment-header">
+                        <strong>Sarah</strong>
+                        <span>November 2, 2026</span>
+                    </div>
+                    <p>
+                        There is so much to see and explore. I would definitely
+                        recommend visiting the Louvre Museum.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <h5>Travel Planner</h5>
+                <div class="footer-links">
+                    <a href="../index.html">Home</a>
+                    <a href="destinations.html">Destinations</a>
+                    <a href="guides.html">Guides</a>
+                    <a href="survey.html">Survey</a>
+                </div>
+            </div>
+            <p class="copyright">&copy; 2026 Travel Planner. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content login-modal">
+                
+                <div class="modal-header">
+                    <h5 class="modal-title">Welcome Back</h5>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <p class="login-description">Login to continue planning your next adventure.</p>
+                    <form id="login-form">
+                        <div class="form-group">
+                            <label for="login-email">Email Address</label>
+                            <input type="email" class="form-control" id="login-email"
+                                placeholder="Enter your email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="login-password">Password</label>
+                            <input type="password" class="form-control" id="login-password"
+                                placeholder="Enter your password" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block login-button">Login</button>
+                    </form>
+                    <p class="signup-text">
+                        Don't have an account? <a href="#">Sign up</a>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
