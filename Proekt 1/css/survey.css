@@ -1,1 +1,78 @@
+/* Survey Header */
+.survey-header {
+    background-color: #f0f8ff;
+    padding: 55px 0;
+    text-align: center;
+}
+.survey-header h1 {
+    font-size: 38px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.survey-header p {
+    max-width: 650px;
+    margin: 0 auto;
+    color: #777;
+    font-size: 15px;
+    line-height: 1.7;
+}
 
+/* Survey Form */
+.survey-container {
+    padding: 50px 0;
+    background-color: #f8fbff;
+}
+.survey-section {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+    margin-bottom: 25px;
+}
+.survey-section h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.section-description {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+.survey-section label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #444;
+}
+
+/* Survey Options */
+.survey-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 25px;
+    margin-top: 12px;
+}
+.survey-options .form-check {
+    padding-left: 25px;
+}
+.survey-options .form-check-label {
+    font-weight: 400;
+    color: #555;
+    cursor: pointer;
+}
+
+/* Survey Buttons */
+.survey-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    padding-bottom: 20px;
+}
+.survey-buttons .btn {
+    padding: 10px 22px;
+    font-size: 14px;
+}
+.survey-section textarea {
+    resize: none;
+    min-height: 100px;
+}
