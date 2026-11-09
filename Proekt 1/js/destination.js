@@ -10,31 +10,31 @@ const destinations = [
         bestTime: "April - June",
         budget: "€100 - €150",
         heroImage: "../images/destinations/paris/paris-hero1.jpg",
-        intro: "Discover the city of lights, famous landmarks, charming streets, and unforgettable experiences.",
-        overview1: "Paris, the capital of France, is one of the most popular travel destinations in the world. Known for its beautiful architecture, historic landmarks, museums and charming streets, the city offers something for every visitor.",
-        overview2: "From exploring the Eiffel Tower and the Louvre Museum to enjoying a walk along the Seine River, Paris   combines history, culture and modern city life. Its cafes, restaurants and shopping streets also make it a great destination for anyone looking to experience French culture.",
+        intro: "Discover Paris, the city of love, art, fashion and unforgettable landmarks.",
+        overview1: "Paris is one of the most visited cities in the world, famous for its beautiful architecture, museums, cafes and romantic atmosphere.",
+        overview2: "Visitors can explore world-famous landmarks, enjoy French cuisine and walk along the Seine while discovering the city's unique neighborhoods.",
         likes: 125,
         dislikes: 12,
         attractions: [
             {
                 name: "Eiffel Tower",
                 image: "../images/destinations/paris/eiffel-tower.jpg",
-                description: "One of the world's most recognizable landmarks, offering incredible views of Paris."
+                description: "The most recognizable landmark in Paris, offering impressive views of the entire city."
             },
             {
                 name: "Louvre Museum",
                 image: "../images/destinations/paris/louvre.jpg",
-                description: "A world-famous museum home to thousands of works of art, including the Mona Lisa."
+                description: "One of the world's largest museums, home to famous artworks including the Mona Lisa."
             },
             {
                 name: "Notre-Dame Cathedral",
                 image: "../images/destinations/paris/notre-dame.jpg",
-                description: "A historic Gothic cathedral known for its architecture and cultural significance."
+                description: "A historic Gothic cathedral known for its architecture and cultural importance."
             },
             {
                 name: "Arc de Triomphe",
                 image: "../images/destinations/paris/arc-de-triomphe.webp",
-                description: "A monumental arch commemorating French history, located at the end of the Champs-Elysees."
+                description: "A famous monument located at the end of the Champs-Elysees."
             }
         ]
     },
@@ -47,31 +47,31 @@ const destinations = [
         bestTime: "April - June, September - October",
         budget: "€80 - €130",
         heroImage: "../images/destinations/rome/rome.jpg",
-        intro: "Explore the Eternal City, known for its ancient ruins, impressive architecture, and rich history.",
-        overview1: "Rome, the capital of Italy, is a city filled with ancient history, beautiful architecture and remarkable cultural landmarks. From the remains of the Roman Empire to its lively streets and traditional restaurants, Rome offers a unique travel experience.",
-        overview2: "Visitors can explore the Colosseum, admire the Trevi Fountain and discover the Vatican. The city's charming squares, historic churches and Italian cuisine make it an unforgettable destination.",
+        intro: "Explore Rome, a historic city filled with ancient ruins, beautiful architecture and Italian culture.",
+        overview1: "Rome is one of the most historically important cities in Europe. Its streets are filled with ancient monuments, churches, fountains and impressive squares.",
+        overview2: "Visitors can explore the remains of the Roman Empire, enjoy traditional Italian food and experience the lively atmosphere of the city.",
         likes: 98,
         dislikes: 8,
         attractions: [
             {
                 name: "Colosseum",
                 image: "../images/destinations/rome/colosseum.jpg",
-                description: "An ancient Roman amphitheatre that once hosted gladiator battles and public events."
+                description: "An ancient amphitheatre where gladiatorial contests and public events once took place."
             },
             {
                 name: "Trevi Fountain",
                 image: "../images/destinations/rome/trevi-fountain.jpg",
-                description: "A famous Baroque fountain where visitors traditionally toss coins for good luck."
+                description: "A famous Baroque fountain where visitors traditionally throw coins for good luck."
             },
             {
                 name: "Pantheon",
                 image: "../images/destinations/rome/pantheon.jpg",
-                description: "A remarkably preserved ancient Roman temple known for its impressive dome."
+                description: "An ancient Roman temple famous for its enormous dome and central opening."
             },
             {
                 name: "St. Peter's Basilica",
                 image: "../images/destinations/rome/st-peters-basilica.jpg",
-                description: "A magnificent Renaissance church located in Vatican City."
+                description: "One of the most important churches in Christianity, located in Vatican City."
             }
         ]
     },
@@ -84,21 +84,21 @@ const destinations = [
         bestTime: "March - May, September - November",
         budget: "€90 - €140",
         heroImage: "../images/destinations/tokyo/tokyo.jpg",
-        intro: "Experience Tokyo, a vibrant city where traditional Japanese culture meets modern technology and entertainment.",
-        overview1: "Tokyo, the capital of Japan, is one of the world's largest and most exciting cities. Known for its futuristic skyline, busy shopping districts and advanced technology, Tokyo also preserves traditional temples, gardens and cultural customs.",
-        overview2: "Visitors can explore the streets of Shibuya, enjoy traditional food and discover historic temples. From peaceful gardens to neon-lit entertainment districts, Tokyo offers a wide variety of experiences.",
+        intro: "Experience Tokyo, a modern metropolis where traditional Japanese culture meets futuristic technology.",
+        overview1: "Tokyo is Japan's capital and one of the largest metropolitan areas in the world. It is known for its skyscrapers, technology, shopping districts and traditional temples.",
+        overview2: "The city offers something for everyone, from quiet gardens and historic shrines to busy streets, restaurants and entertainment districts.",
         likes: 150,
         dislikes: 15,
         attractions: [
             {
                 name: "Tokyo Tower",
                 image: "../images/destinations/tokyo/tokyo-tower.jpg",
-                description: "A famous red-and-white tower offering panoramic views of the city."
+                description: "A famous observation tower offering panoramic views of the Tokyo skyline."
             },
             {
                 name: "Senso-ji Temple",
                 image: "../images/destinations/tokyo/senso-ji.jpg",
-                description: "Tokyo's oldest Buddhist temple, located in the historic Asakusa district."
+                description: "Tokyo's oldest temple, located in the historic Asakusa district."
             },
             {
                 name: "Shibuya Crossing",
@@ -121,31 +121,31 @@ const destinations = [
         bestTime: "May - October",
         budget: "€100 - €160",
         heroImage: "../images/destinations/santorini/santorini.jpg",
-        intro: "Discover Santorini, a beautiful Greek island famous for white buildings, blue domes and breathtaking sea views.",
-        overview1: "Santorini is one of Greece's most recognizable islands, known for its whitewashed houses, blue-domed churches and spectacular views of the Aegean Sea. Its villages are built along the edges of a volcanic caldera, creating some of the most famous landscapes in the Mediterranean.",
-        overview2: "Visitors can explore traditional villages, relax on volcanic beaches and enjoy beautiful sunsets. Santorini is also known for its local cuisine, wineries and peaceful island atmosphere.",
+        intro: "Discover Santorini, a Greek island known for its white buildings, blue domes and beautiful sunsets.",
+        overview1: "Santorini is a volcanic island in the Aegean Sea, famous for its dramatic cliffs, traditional villages and spectacular views of the caldera.",
+        overview2: "Visitors can relax on unique beaches, explore small villages, enjoy Greek food and watch the sunset over the sea.",
         likes: 110,
         dislikes: 5,
         attractions: [
             {
-                name: "Oia Village",
+                name: "Oia",
                 image: "../images/destinations/santorini/oia.jpg",
                 description: "A picturesque village famous for its white buildings and spectacular sunsets."
             },
             {
                 name: "Fira",
                 image: "../images/destinations/santorini/fira.jpg",
-                description: "The island's lively capital, featuring shops, restaurants and beautiful caldera views."
+                description: "The island's capital, featuring shops, restaurants and impressive caldera views."
             },
             {
                 name: "Red Beach",
                 image: "../images/destinations/santorini/red-beach.jpg",
-                description: "A unique beach surrounded by impressive red volcanic cliffs."
+                description: "A unique beach surrounded by dramatic red volcanic cliffs."
             },
             {
                 name: "Akrotiri",
                 image: "../images/destinations/santorini/akrotiri.jpg",
-                description: "An ancient archaeological site preserving the remains of a Minoan settlement."
+                description: "An ancient settlement preserved beneath volcanic ash."
             }
         ]
     },
@@ -158,31 +158,31 @@ const destinations = [
         bestTime: "April - October",
         budget: "€40 - €90",
         heroImage: "../images/destinations/bali/bali.jpg",
-        intro: "Escape to Bali, an island known for tropical beaches, lush rice terraces, temples and beautiful natural landscapes.",
-        overview1: "Bali is an Indonesian island famous for its tropical scenery, traditional culture and welcoming atmosphere. Its landscape includes green rice terraces, volcanic mountains, waterfalls and beautiful beaches.",
-        overview2: "Visitors can explore ancient temples, discover traditional villages and enjoy outdoor activities such as surfing and hiking. Bali also offers a variety of local food, relaxing resorts and vibrant cultural experiences.",
+        intro: "Visit Bali, a tropical island known for its beaches, temples, rice terraces and natural beauty.",
+        overview1: "Bali is one of Indonesia's most popular travel destinations. It offers tropical landscapes, traditional villages, beautiful beaches and a unique local culture.",
+        overview2: "Visitors can explore ancient temples, hike volcanic mountains, relax by the ocean and discover the island's famous rice terraces.",
         likes: 140,
         dislikes: 10,
         attractions: [
             {
                 name: "Uluwatu Temple",
                 image: "../images/destinations/bali/uluwatu-temple.jpg",
-                description: "A historic sea temple situated on a cliff overlooking the Indian Ocean."
+                description: "A historic sea temple located on a cliff overlooking the Indian Ocean."
             },
             {
                 name: "Tegallalang Rice Terraces",
                 image: "../images/destinations/bali/tegallalang.jpg",
-                description: "Beautiful green rice fields arranged across the hills near Ubud."
+                description: "Beautiful green rice fields arranged across the hillsides."
             },
             {
-                name: "Ubud Monkey Forest",
+                name: "Monkey Forest",
                 image: "../images/destinations/bali/monkey-forest.jpg",
-                description: "A natural forest sanctuary containing ancient temples and long-tailed macaques."
+                description: "A natural forest sanctuary in Ubud that is home to hundreds of monkeys."
             },
             {
                 name: "Mount Batur",
                 image: "../images/destinations/bali/mount-batur.jpg",
-                description: "An active volcano popular for sunrise hikes and panoramic views."
+                description: "An active volcano popular for sunrise hikes and views of the surrounding landscape."
             }
         ]
     },
@@ -195,26 +195,26 @@ const destinations = [
         bestTime: "December - March, June - September",
         budget: "€120 - €200",
         heroImage: "../images/destinations/swiss/swiss-alps.webp",
-        intro: "Discover the Swiss Alps, a spectacular mountain region with snowy peaks, alpine villages and breathtaking scenery.",
-        overview1: "The Swiss Alps are famous for their dramatic mountain landscapes, clear lakes and charming alpine villages. The region attracts visitors throughout the year, offering snowy winter scenery and green mountain trails during the warmer months.",
-        overview2: "Travelers can enjoy skiing, hiking, mountain railways and beautiful viewpoints. Traditional villages and peaceful lakes make the Swiss Alps an ideal destination for nature lovers and outdoor enthusiasts.",
+        intro: "Explore the Swiss Alps, a spectacular mountain region known for its scenery and outdoor activities.",
+        overview1: "The Swiss Alps are famous for their snow-covered peaks, mountain villages, clear lakes and scenic hiking trails.",
+        overview2: "Visitors can enjoy skiing, hiking, mountain railways and breathtaking views throughout the year.",
         likes: 130,
         dislikes: 7,
         attractions: [
             {
                 name: "Matterhorn",
                 image: "../images/destinations/swiss/matterhorn.jpg",
-                description: "One of the most recognizable mountain peaks in the world, near the village of Zermatt."
+                description: "One of the most recognizable mountain peaks in the world."
             },
             {
                 name: "Jungfraujoch",
                 image: "../images/destinations/swiss/jungfraujoch.jpg",
-                description: "A famous mountain destination offering spectacular views of the surrounding Alps."
+                description: "A famous mountain destination known as the Top of Europe."
             },
             {
                 name: "Lake Lucerne",
                 image: "../images/destinations/swiss/lake-lucerne.jpg",
-                description: "A beautiful alpine lake surrounded by mountains and picturesque towns."
+                description: "A beautiful lake surrounded by mountains and picturesque towns."
             },
             {
                 name: "Aletsch Glacier",
@@ -232,26 +232,26 @@ const destinations = [
         bestTime: "May - September",
         budget: "€100 - €170",
         heroImage: "../images/destinations/norway/norwegian-fjords.jpg",
-        intro: "Explore Norway's dramatic fjords, surrounded by towering mountains, waterfalls and peaceful coastal villages.",
-        overview1: "Norway's fjords are among the most impressive natural landscapes in Europe. Formed by glaciers over thousands of years, these deep waterways are surrounded by steep mountains, green valleys and spectacular waterfalls.",
-        overview2: "Visitors can explore the fjords by boat, hike through mountain landscapes and discover traditional Norwegian villages. The region is especially popular among travelers looking for peaceful scenery and outdoor adventures.",
+        intro: "Discover Norway's fjords, famous for their dramatic cliffs, deep blue waters and impressive landscapes.",
+        overview1: "Norway's fjords are natural sea inlets surrounded by steep mountains and waterfalls. They create some of the most impressive landscapes in Northern Europe.",
+        overview2: "Visitors can explore the region by boat, hike to mountain viewpoints and discover small villages surrounded by nature.",
         likes: 115,
         dislikes: 6,
         attractions: [
             {
                 name: "Geirangerfjord",
                 image: "../images/destinations/norway/geirangerfjord.jpg",
-                description: "A spectacular fjord famous for its steep cliffs and impressive waterfalls."
+                description: "A spectacular fjord surrounded by steep mountains and famous waterfalls."
             },
             {
                 name: "Nærøyfjord",
                 image: "../images/destinations/norway/naeroyfjord.jpg",
-                description: "A narrow fjord surrounded by dramatic mountains and beautiful natural scenery."
+                description: "A narrow fjord known for its dramatic scenery and peaceful surroundings."
             },
             {
                 name: "Trolltunga",
                 image: "../images/destinations/norway/trolltunga.jpg",
-                description: "A famous rock formation extending over a mountain lake, reached by a challenging hike."
+                description: "A famous rock formation that extends horizontally above a deep mountain lake."
             },
             {
                 name: "Flåm",
@@ -269,26 +269,26 @@ const destinations = [
         bestTime: "March - May, October - November",
         budget: "€70 - €120",
         heroImage: "../images/destinations/kyoto/kyoto.jpg",
-        intro: "Step into Kyoto, a historic Japanese city filled with traditional temples, peaceful gardens and beautiful cultural landmarks.",
-        overview1: "Kyoto served as Japan's capital for more than a thousand years and remains one of the country's most important cultural destinations. The city is known for its traditional wooden streets, historic temples, gardens and seasonal scenery.",
-        overview2: "Visitors can explore traditional districts, walk through bamboo forests and admire historic shrines. Kyoto is also famous for its tea culture, traditional cuisine and beautiful cherry blossoms during spring.",
+        intro: "Experience Kyoto, a historic Japanese city filled with temples, gardens and traditional architecture.",
+        overview1: "Kyoto was once Japan's capital and remains one of the country's most important cultural destinations. It is known for its temples, traditional streets and beautiful gardens.",
+        overview2: "Visitors can explore historic shrines, walk through bamboo forests and experience traditional Japanese culture.",
         likes: 135,
         dislikes: 9,
         attractions: [
             {
                 name: "Fushimi Inari Shrine",
                 image: "../images/destinations/kyoto/fushimi-inari.jpg",
-                description: "A famous shrine featuring thousands of red torii gates along a mountain trail."
+                description: "A famous shrine known for its thousands of red torii gates along mountain paths."
             },
             {
                 name: "Arashiyama Bamboo Grove",
                 image: "../images/destinations/kyoto/arashiyama-bamboo.jpg",
-                description: "A beautiful bamboo forest with walking paths surrounded by tall bamboo trees."
+                description: "A peaceful bamboo forest with walking paths surrounded by tall bamboo."
             },
             {
                 name: "Kinkaku-ji",
                 image: "../images/destinations/kyoto/kinkakuji.jpg",
-                description: "The Golden Pavilion, a famous temple covered in gold leaf beside a peaceful pond."
+                description: "A famous golden temple reflected in the pond surrounding it."
             },
             {
                 name: "Kiyomizu-dera",
@@ -306,31 +306,31 @@ const destinations = [
         bestTime: "June - September",
         budget: "€110 - €180",
         heroImage: "../images/destinations/interlaken/interlaken.webp",
-        intro: "Experience Interlaken, a beautiful Swiss town surrounded by lakes, mountains and exciting outdoor activities.",
-        overview1: "Interlaken is a popular destination in the Bernese Oberland region of Switzerland, situated between Lake Thun and Lake Brienz. Surrounded by the Swiss Alps, the town is known for its beautiful landscapes and outdoor adventure opportunities.",
-        overview2: "Visitors can enjoy hiking, paragliding, boat trips and mountain excursions. Its location also makes it a convenient starting point for exploring nearby alpine villages and famous mountain viewpoints.",
+        intro: "Visit Interlaken, a Swiss town surrounded by lakes and mountains, popular for outdoor adventures.",
+        overview1: "Interlaken is located between Lake Thun and Lake Brienz, with the Swiss Alps providing a spectacular background.",
+        overview2: "The area is popular for hiking, paragliding, boat trips and other outdoor activities, making it a great destination for adventure lovers.",
         likes: 120,
         dislikes: 8,
         attractions: [
             {
                 name: "Harder Kulm",
                 image: "../images/destinations/interlaken/harder-kulm.jpg",
-                description: "A popular viewpoint overlooking Interlaken and the surrounding mountain peaks."
+                description: "A mountain viewpoint offering panoramic views of Interlaken and the surrounding lakes."
             },
             {
                 name: "Lake Brienz",
                 image: "../images/destinations/interlaken/lake-brienz.jpg",
-                description: "A turquoise alpine lake known for its clear water and beautiful mountain scenery."
+                description: "A beautiful turquoise lake surrounded by mountains and small villages."
             },
             {
                 name: "Lake Thun",
                 image: "../images/destinations/interlaken/lake-thun.jpg",
-                description: "A scenic lake surrounded by mountains, castles and charming lakeside towns."
+                description: "A large alpine lake known for its scenic boat trips and lakeside towns."
             },
             {
                 name: "Jungfraujoch",
                 image: "../images/destinations/interlaken/jungfraujoch.jpg",
-                description: "A famous high-altitude destination offering views of glaciers and the surrounding Alps."
+                description: "A high-altitude mountain destination with spectacular views of the Alps."
             }
         ]
     },
@@ -343,31 +343,31 @@ const destinations = [
         bestTime: "December - March, June - September",
         budget: "€100 - €160",
         heroImage: "../images/destinations/chamonix/chamonix.jpg",
-        intro: "Discover Chamonix, a mountain town at the foot of Mont Blanc, famous for skiing, hiking and alpine scenery.",
-        overview1: "Chamonix is a popular mountain destination in southeastern France, located near the borders of Switzerland and Italy. It sits at the foot of Mont Blanc, the highest mountain in the Alps, and attracts visitors throughout the year.",
-        overview2: "The town is known for skiing, mountaineering, hiking and spectacular mountain views. Visitors can explore alpine trails, ride mountain cable cars and enjoy the atmosphere of a traditional French mountain town.",
+        intro: "Discover Chamonix, a French mountain town located at the foot of Mont Blanc.",
+        overview1: "Chamonix is a popular destination for mountain lovers, surrounded by impressive peaks, glaciers and alpine scenery.",
+        overview2: "Visitors can enjoy skiing, hiking, cable car rides and views of Mont Blanc, the highest mountain in the Alps.",
         likes: 105,
         dislikes: 6,
         attractions: [
             {
                 name: "Aiguille du Midi",
                 image: "../images/destinations/chamonix/aiguille-du-midi.jpg",
-                description: "A famous mountain viewpoint reached by cable car, offering incredible views of the Alps."
+                description: "A famous mountain viewpoint reached by cable car, offering spectacular alpine views."
             },
             {
                 name: "Mer de Glace",
                 image: "../images/destinations/chamonix/mer-de-glace.jpg",
-                description: "One of France's largest glaciers, accessible by the scenic Montenvers railway."
+                description: "A large glacier that can be explored through scenic mountain railway trips."
             },
             {
                 name: "Mont Blanc",
                 image: "../images/destinations/chamonix/mont-blanc.jpg",
-                description: "The highest mountain in the Alps, attracting climbers and visitors from around the world."
+                description: "The highest mountain in the Alps and one of Europe's most famous peaks."
             },
             {
-                name: "Chamonix Town Centre",
+                name: "Chamonix Centre",
                 image: "../images/destinations/chamonix/chamonix-centre.jpg",
-                description: "A lively alpine town centre filled with shops, restaurants and traditional mountain architecture."
+                description: "The town centre, filled with shops, restaurants and traditional alpine architecture."
             }
         ]
     }
@@ -382,6 +382,36 @@ const destination = destinations.find(function(destination) {
 
 if (destination) {
     displayDestination();
+
+    document.getElementById("like-button").addEventListener("click", function() {
+        voteForDestination("like");
+    });
+
+    document.getElementById("dislike-button").addEventListener("click", function() {
+        voteForDestination("dislike");
+    });
+
+    displayRating();
+
+    displayComments();
+
+    document.getElementById("comment-form").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        const nameInput = document.getElementById("comment-name");
+        const textInput = document.getElementById("comment-text");
+
+        const name = nameInput.value.trim();
+        const text = textInput.value.trim();
+
+        if (name === "" || text === "") {
+            return;
+        }
+
+        addComment(name, text);
+        this.reset();
+    });
+
 } else {
     window.location.href = "destinations.html";
 }
@@ -398,6 +428,8 @@ function displayDestination() {
 
     document.getElementById("overview-title").textContent =
         "Discover " + destination.name;
+    document.getElementById("destination-guide-link").href =
+    "guides.html#" + destination.name.toLowerCase().replaceAll(" ", "-") + "-guide";
 
     document.getElementById("overview-description-1").textContent =
         destination.overview1;
@@ -438,4 +470,131 @@ function displayAttractions() {
             </div>
         `;
     });
+}
+
+function getDestinationRating() {
+    let ratings = JSON.parse(localStorage.getItem("destinationRatings")) || {};
+
+    if (!ratings[destination.id]) {
+        ratings[destination.id] = {
+            likes: destination.likes,
+            dislikes: destination.dislikes,
+            userVote: null
+        };
+
+        localStorage.setItem("destinationRatings", JSON.stringify(ratings));
+    }
+
+    return ratings[destination.id];
+}
+
+function displayRating() {
+    const rating = getDestinationRating();
+
+    document.getElementById("like-count").textContent = rating.likes;
+    document.getElementById("dislike-count").textContent = rating.dislikes;
+}
+
+function voteForDestination(vote) {
+    let ratings = JSON.parse(localStorage.getItem("destinationRatings")) || {};
+
+    if (!ratings[destination.id]) {
+        ratings[destination.id] = {
+            likes: destination.likes,
+            dislikes: destination.dislikes,
+            userVote: null
+        };
+    }
+
+    const rating = ratings[destination.id];
+
+    if (rating.userVote === vote) {
+        return;
+    }
+
+    if (rating.userVote === "like") {
+        rating.likes--;
+    } else if (rating.userVote === "dislike") {
+        rating.dislikes--;
+    }
+
+    if (vote === "like") {
+        rating.likes++;
+    } else if (vote === "dislike") {
+        rating.dislikes++;
+    }
+
+    rating.userVote = vote;
+
+    localStorage.setItem("destinationRatings", JSON.stringify(ratings));
+
+    displayRating();
+}
+
+function getDestinationComments() {
+    const allComments = JSON.parse(localStorage.getItem("destinationComments")) || {};
+
+    return allComments[destination.id] || [];
+}
+
+function displayComments() {
+    const commentsContainer = document.getElementById("comments-container");
+    const comments = getDestinationComments();
+
+    commentsContainer.innerHTML = "";
+
+    if (comments.length === 0) {
+        commentsContainer.textContent =
+            "No comments yet. Be the first to share your experience!";
+        return;
+    }
+
+    comments.forEach(function(comment) {
+        const commentItem = document.createElement("div");
+        commentItem.classList.add("comment-item");
+
+        const commentHeader = document.createElement("div");
+        commentHeader.classList.add("comment-header");
+
+        const name = document.createElement("strong");
+        name.textContent = comment.name;
+
+        const date = document.createElement("span");
+        date.textContent = comment.date;
+
+        const text = document.createElement("p");
+        text.textContent = comment.text;
+
+        commentHeader.appendChild(name);
+        commentHeader.appendChild(date);
+
+        commentItem.appendChild(commentHeader);
+        commentItem.appendChild(text);
+
+        commentsContainer.appendChild(commentItem);
+    });
+}
+
+function addComment(name, text) {
+    const allComments = JSON.parse(localStorage.getItem("destinationComments")) || {};
+
+    if (!allComments[destination.id]) {
+        allComments[destination.id] = [];
+    }
+
+    const newComment = {
+        name: name,
+        text: text,
+        date: new Date().toLocaleDateString("en-US", {
+            year: "numeric",
+            month: "long",
+            day: "numeric"
+        })
+    };
+
+    allComments[destination.id].push(newComment);
+
+    localStorage.setItem("destinationComments", JSON.stringify(allComments));
+
+    displayComments();
 }
