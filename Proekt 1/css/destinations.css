@@ -34,7 +34,7 @@
 /* Destination Controls */
 .destination-controls {
     padding: 25px 0;
-    background-color: #f8f9fa;
+    background-color: white;
 }
 .destination-controls .container {
     display: flex;
@@ -72,7 +72,7 @@
     white-space: nowrap;
 }
 .destination-sorting select {
-    width: 170px;
+    width: 200px;
 }
 
 /* Destinations List */
@@ -103,13 +103,22 @@
     top: 12px;
     right: 12px;
     z-index: 2;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: none;
-    border-radius: 4px;
-    padding: 6px 10px;
-    background-color: rgba(220, 53, 69, 0.95);
+    border-radius: 5px;
+    background-color: rgba(220, 53, 69, 1);
     color: white;
-    font-size: 13px;
     cursor: pointer;
+    transition: 0.2s;
+}
+.destination-remove-btn img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
 }
 .destination-remove-btn:hover {
     background-color: #c82333;
