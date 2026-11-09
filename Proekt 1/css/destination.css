@@ -255,3 +255,7 @@
     line-height: 1.7;
     margin-bottom: 0;
 }
+#comment-text {
+    resize: none;
+    min-height: 100px;
+}
