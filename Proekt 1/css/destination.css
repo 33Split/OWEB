@@ -1,7 +1,7 @@
 /* Destination Hero */
 .destination-hero {
     height: 500px;
-    background-image: url("../images/destinations/paris/paris-hero1.jpg");
+    background-color: #555;
     background-size: cover;
     background-position: center;
     color: white;
