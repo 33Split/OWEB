@@ -1,1 +1,257 @@
+/* Destination Hero */
+.destination-hero {
+    height: 500px;
+    background-image: url("../images/destinations/paris/paris-hero1.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+.destination-hero-overlay {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1));
+}
+.destination-hero-content {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.destination-country {
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+.destination-hero h1 {
+    font-size: 65px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.destination-intro {
+    max-width: 550px;
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+.destination-hero .btn {
+    padding: 12px 25px;
+    font-weight: 600;
+    border-radius: 6px;
+}
 
+/* Destination Overview */
+.destination-overview {
+    padding-top: 65px;
+    padding-bottom: 65px;
+}
+.overview-description {
+    padding-right: 40px;
+}
+.overview-description h2 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.overview-description p {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+.overview-info {
+    background-color: #f0f8ff;
+    padding: 25px;
+    border-radius: 10px;
+}
+.overview-info h4 {
+    font-size: 21px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.overview-info-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 0;
+    border-bottom: 1px solid #dce5ed;
+    font-size: 13px;
+}
+.overview-info-item:last-child {
+    border-bottom: none;
+}
+.overview-info-item span {
+    color: #666;
+}
+.overview-info-item strong {
+    font-weight: 600;
+    text-align: right;
+}
+
+/* Popular Attractions */
+.destination-attractions {
+    padding-top: 50px;
+    padding-bottom: 60px;
+    background-color: #f0f8ff;
+}
+.attractions-header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+.attractions-header h2 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.attractions-header p {
+    color: #777;
+    font-size: 14px;
+}
+.attraction-card {
+    height: 100%;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+.attraction-card:hover {
+    transform: translateY(-5px);
+}
+.attraction-image {
+    width: 100%;
+    height: 190px;
+    overflow: hidden;
+}
+.attraction-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.attraction-content {
+    padding: 18px;
+}
+.attraction-content h5 {
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.attraction-content p {
+    color: #777;
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+/* Destination Rating */
+.destination-rating {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #f0f8ff;
+}
+.rating-content {
+    text-align: center;
+}
+.rating-content h2 {
+    font-size: 27px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.rating-content > p {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+.rating-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.rating-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 22px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: white;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+.rating-btn:hover {
+    background-color: #e5f1fc;
+}
+.rating-count {
+    color: #777;
+    font-weight: 400;
+}
+
+/* Destination Comments */
+.destination-comments {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.destination-comments h2 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.comments-description {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+.comment-form-container {
+    background-color: #f0f8ff;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+.comment-form-container h4,
+.comments-list h4 {
+    font-size: 19px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.comment-form-container label {
+    font-size: 13px;
+    font-weight: 600;
+}
+.comment-form-container .form-control {
+    font-size: 14px;
+    border-radius: 6px;
+    padding: 10px 12px;
+}
+.comment-submit {
+    padding: 10px 22px;
+    font-size: 13px;
+    font-weight: 600;
+}
+.comments-list {
+    max-width: 850px;
+}
+.comment-item {
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+.comment-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.comment-header strong {
+    font-size: 14px;
+    font-weight: 600;
+}
+.comment-header span {
+    color: #999;
+    font-size: 12px;
+}
+.comment-item p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
