@@ -13,7 +13,7 @@
     <script src="../js/destination.js" defer></script>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
             <a class="navbar-brand" href="../index.html">Travel Planner</a>
             <ul class="navbar-nav ml-auto">
@@ -36,15 +36,12 @@
         </div>
     </nav>
 
-    <section class="destination-hero">
+    <section class="destination-hero" id="destination-hero">
         <div class="destination-hero-overlay">
             <div class="container destination-hero-content">
-                <p class="destination-country" id="destination-country">France</p>
-                <h1 id="destination-name">Paris</h1>
-                <p class="destination-intro" id="destination-intro">
-                    Discover the city of lights, famous landmarks, charming streets,
-                    and unforgettable experiences.
-                </p>
+                <p class="destination-country" id="destination-country"></p>
+                <h1 id="destination-name"></h1>
+                <p class="destination-intro" id="destination-intro"></p>
                 <a href="#attractions" class="btn btn-primary">Explore Attractions</a>
             </div>
         </div>
@@ -54,20 +51,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-7 overview-description">
-                    <h2>Discover Paris</h2>
-                    <p>
-                        Paris, the capital of France, is one of the most popular
-                        travel destinations in the world. Known for its beautiful
-                        architecture, historic landmarks, museums and charming
-                        streets, the city offers something for every visitor.
-                    </p>
-                    <p>
-                        From exploring the Eiffel Tower and the Louvre Museum
-                        to enjoying a walk along the Seine River, Paris combines
-                        history, culture and modern city life. Its cafes, restaurants
-                        and shopping streets also make it a great destination
-                        for anyone looking to experience French culture.
-                    </p>
+                    <h2 id="overview-title"></h2>
+                    <p id="overview-description-1"></p>
+                    <p id="overview-description-2"></p>
                 </div>
                 <div class="col-lg-5">
                     <div class="overview-info">
@@ -75,27 +61,27 @@
 
                         <div class="overview-info-item">
                             <span>Country</span>
-                            <strong>France</strong>
+                            <strong id="info-country"></strong>
                         </div>
 
                         <div class="overview-info-item">
                             <span>Language</span>
-                            <strong>French</strong>
+                            <strong id="info-language"></strong>
                         </div>
 
                         <div class="overview-info-item">
                             <span>Currency</span>
-                            <strong>Euro (EUR)</strong>
+                            <strong id="info-currency"></strong>
                         </div>
 
                         <div class="overview-info-item">
                             <span>Best Time to Visit</span>
-                            <strong>April - June</strong>
+                            <strong id="info-best-time"></strong>
                         </div>
 
                         <div class="overview-info-item">
                             <span>Estimated Daily Budget</span>
-                            <strong>€100 - €150</strong>
+                            <strong id="info-budget"></strong>
                         </div>
                     </div>
                 </div>
@@ -107,69 +93,10 @@
         <div class="container">
             <div class="attractions-header">
                 <h2>Popular Attractions</h2>
-                <p>Discover some of the most famous places worth visiting in Paris.</p>
+                <p id="attractions-description"></p>
             </div>
 
-            <div class="row">
-                <div class="col-lg-3 col-md-6">
-                    <div class="attraction-card">
-                        <div class="attraction-image">
-                            <img src="../images/destinations/paris/eiffel-tower.jpg" alt="Eiffel Tower">
-                        </div>
-                        <div class="attraction-content">
-                            <h5>Eiffel Tower</h5>
-                            <p>
-                                One of the world's most recognizable landmarks,
-                                offering incredible views of Paris.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6">
-                    <div class="attraction-card">
-                        <div class="attraction-image">
-                            <img src="../images/destinations/paris/louvre.jpg" alt="Louvre Museum">
-                        </div>
-                        <div class="attraction-content">
-                            <h5>Louvre Museum</h5>
-                            <p>
-                                A world-famous museum home to thousands of works
-                                of art, including the Mona Lisa.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6">
-                    <div class="attraction-card">
-                        <div class="attraction-image">
-                            <img src="../images/destinations/paris/notre-dame.jpg" alt="Notre-Dame Cathedral">
-                        </div>
-                        <div class="attraction-content">
-                            <h5>Notre-Dame Cathedral</h5>
-                            <p>
-                                A historic Gothic cathedral known for its
-                                architecture and cultural significance.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6">
-                    <div class="attraction-card">
-                        <div class="attraction-image">
-                            <img src="../images/destinations/paris/arc-de-triomphe.webp" alt="Arc de Triomphe">
-                        </div>
-                        <div class="attraction-content">
-                            <h5>Arc de Triomphe</h5>
-                            <p>
-                                A monumental arch commemorating French history,
-                                located at the end of the Champs-Elysees.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+            <div class="row" id="attractions-container">
             </div>
         </div>
     </section>
@@ -184,13 +111,13 @@
                     <button type="button" class="rating-btn like-btn" id="like-button">
                         <span>&#128077;</span>
                         Like
-                        <span class="rating-count" id="like-count">125</span>
+                        <span class="rating-count" id="like-count">0</span>
                     </button>
 
                     <button type="button" class="rating-btn dislike-btn" id="dislike-button">
                         <span>&#128078;</span>
                         Dislike
-                        <span class="rating-count" id="dislike-count">12</span>
+                        <span class="rating-count" id="dislike-count">0</span>
                     </button>
                 </div>
             </div>
@@ -201,6 +128,7 @@
         <div class="container">
             <h2>Traveler Comments</h2>
             <p class="comments-description">Share your experience or read what other travelers have to say.</p>
+
             <div class="comment-form-container">
                 <h4>Leave a Comment</h4>
                 <form id="comment-form">
@@ -220,27 +148,10 @@
                     <button type="submit" class="btn btn-primary comment-submit">Post Comment</button>
                 </form>
             </div>
-            <div class="comments-list" id="comments-list">
+
+            <div class="comments-list">
                 <h4>Recent Comments</h4>
-                <div class="comment-item">
-                    <div class="comment-header">
-                        <strong>Alex</strong>
-                        <span>November 5, 2026</span>
-                    </div>
-                    <p>
-                        Paris was absolutely beautiful! The Eiffel Tower at night
-                        was definitely my favorite experience.
-                    </p>
-                </div>
-                <div class="comment-item">
-                    <div class="comment-header">
-                        <strong>Sarah</strong>
-                        <span>November 2, 2026</span>
-                    </div>
-                    <p>
-                        There is so much to see and explore. I would definitely
-                        recommend visiting the Louvre Museum.
-                    </p>
+                <div id="comments-container">
                 </div>
             </div>
         </div>
@@ -264,7 +175,6 @@
     <div class="modal fade" id="loginModal" tabindex="-1" role="dialog">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content login-modal">
-                
                 <div class="modal-header">
                     <h5 class="modal-title">Welcome Back</h5>
                     <button type="button" class="close" data-dismiss="modal">
@@ -292,7 +202,6 @@
                         Don't have an account? <a href="#">Sign up</a>
                     </p>
                 </div>
-
             </div>
         </div>
     </div>
