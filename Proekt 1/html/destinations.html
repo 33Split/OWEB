@@ -7,277 +7,207 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/destinations.css">
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../js/main.js" defer></script>
     <script src="../js/destinations.js" defer></script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container">
             <a class="navbar-brand" href="../index.html">Travel Planner</a>
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="../index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="destinations.html">Destinations</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="guides.html">Guides</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="survey.html">Survey</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#" data-toggle="modal" data-target="#loginModal">Login</a>
-                </li>
-            </ul>
+            <div class="navbar-nav ml-auto">
+                <a class="nav-item nav-link" href="../index.html">Home</a>
+                <a class="nav-item nav-link active" href="destinations.html">Destinations</a>
+                <a class="nav-item nav-link" href="guides.html">Guides</a>
+                <a class="nav-item nav-link" href="survey.html">Survey</a>
+                <a class="nav-item nav-link" href="#" data-toggle="modal" data-target="#loginModal">Login</a>
+            </div>
         </div>
     </nav>
 
     <section class="destinations-header">
         <div class="container">
             <h1>Explore Destinations</h1>
-            <p>Discover new places and find your next adventure.</p>
+            <p>Discover amazing places and find your next travel destination.</p>
             <div class="destination-search">
                 <input type="text" id="destination-search" placeholder="Search for a destination...">
-                <button type="button">Search</button>
+                <button type="button" class="btn btn-primary" id="search-destinations">Search</button>
             </div>
         </div>
     </section>
 
-    <section class="destination-controls container">
-        <div class="destination-categories">
-            <button class="category-btn active" data-category="all">All</button>
-            <button class="category-btn" data-category="city">Cities</button>
-            <button class="category-btn" data-category="beach">Beaches</button>
-            <button class="category-btn" data-category="nature">Nature</button>
-            <button class="category-btn" data-category="historical">Historical</button>
-            <button class="category-btn" data-category="adventure">Adventure</button>
-        </div>
+    <section class="destination-controls">
+        <div class="container">
+            <div class="category-filters">
+                <button type="button" class="filter-btn active" data-category="all">All</button>
+                <button type="button" class="filter-btn" data-category="city">City</button>
+                <button type="button" class="filter-btn" data-category="beach">Beach</button>
+                <button type="button" class="filter-btn" data-category="nature">Nature</button>
+                <button type="button" class="filter-btn" data-category="historical">Historical</button>
+                <button type="button" class="filter-btn" data-category="adventure">Adventure</button>
+            </div>
 
-        <div class="destination-sort">
-            <label for="sort-destinations">Sort by:</label>
-            <select id="sort-destinations">
-                <option value="popularity">Popularity</option>
-                <option value="price-asc">Price: Low to High</option>
-                <option value="price-desc">Price: High to Low</option>
-                <option value="name">Name: A-Z</option>
-            </select>
-        </div>
-    </section>
-
-    <section class="destinations-list container">
-        <div class="destinations-list-header">
-            <div>
-                <h2>All Destinations</h2>
-                <p>Find the perfect place for your next trip.</p>
-            </div>
-            <button type="button" class="add-destination-btn">+ Add Destination</button>
-        </div>
-
-        <div class="row">
-            <div class="col-md-3 mb-4">
-                <div class="destination-item"
-                    data-id="1"
-                    data-category="city"
-                    data-price="450"
-                    data-likes="125"
-                    data-dislikes="12">
-                    <a href="destination.html?id=1" class="destination-link">
-                        <div class="destination-card">
-                            <div class="destination-image">
-                                <img src="../images/destinations/paris/paris.jpg" alt="Paris">
-                                <div class="destination-overlay">
-                                    <h5>Paris</h5>
-                                    <p>France</p>
-                                </div>
-                            </div>
-                            <div class="destination-card-info">
-                                <span>From €450</span>
-                                <span>125 likes</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-3 mb-4">
-                <div class="destination-item"
-                    data-id="2"
-                    data-category="historical"
-                    data-price="400"
-                    data-likes="98"
-                    data-dislikes="8">
-                    <a href="destination.html?id=2" class="destination-link">
-                        <div class="destination-card">
-                            <div class="destination-image">
-                                <img src="../images/destinations/rome/rome.jpg" alt="Rome">
-                                <div class="destination-overlay">
-                                    <h5>Rome</h5>
-                                    <p>Italy</p>
-                                </div>
-                            </div>
-                            <div class="destination-card-info">
-                                <span>From €400</span>
-                                <span>98 likes</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-3 mb-4">
-                <div class="destination-item"
-                    data-id="3"
-                    data-category="city"
-                    data-price="800"
-                    data-likes="150"
-                    data-dislikes="15">
-                    <a href="destination.html?id=3" class="destination-link">
-                        <div class="destination-card">
-                            <div class="destination-image">
-                                <img src="../images/destinations/tokyo/tokyo.jpg" alt="Tokyo">
-                                <div class="destination-overlay">
-                                    <h5>Tokyo</h5>
-                                    <p>Japan</p>
-                                </div>
-                            </div>
-                            <div class="destination-card-info">
-                                <span>From €800</span>
-                                <span>150 likes</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-3 mb-4">
-                <div class="destination-item"
-                    data-id="4"
-                    data-category="beach"
-                    data-price="550"
-                    data-likes="110"
-                    data-dislikes="5">
-                    <a href="destination.html?id=4" class="destination-link">
-                        <div class="destination-card">
-                            <div class="destination-image">
-                                <img src="../images/destinations/santorini/santorini.jpg" alt="Santorini">
-                                <div class="destination-overlay">
-                                    <h5>Santorini</h5>
-                                    <p>Greece</p>
-                                </div>
-                            </div>
-                            <div class="destination-card-info">
-                                <span>From €550</span>
-                                <span>110 likes</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
+            <div class="destination-sorting">
+                <label for="sort-destinations">Sort by:</label>
+                <select id="sort-destinations" class="form-control">
+                    <option value="popularity">Popularity</option>
+                    <option value="price-asc">Price: Low to High</option>
+                    <option value="price-desc">Price: High to Low</option>
+                    <option value="name">Name</option>
+                </select>
             </div>
         </div>
     </section>
 
-    <section class="travel-calculator container">
-        <div class="travel-calculator-content">
+    <section class="destinations-list">
+        <div class="container">
+            <div class="destinations-list-header">
+                <h2>Available Destinations</h2>
+                <button type="button" class="btn btn-primary add-destination-btn"
+                        data-toggle="modal" data-target="#addDestinationModal">
+                    Add Destination</button>
+            </div>
+            <div class="row" id="destinations-container">
+            </div>
+        </div>
+    </section>
+
+    <section class="travel-calculator">
+        <div class="container">
             <h2>Travel Cost Calculator</h2>
-            <p>Calculate the estimated cost of your next trip.</p>
-
-            <div class="travel-calculator-form">
+            <p>Estimate the total cost of your trip based on your travel plans.</p>
+            <div class="calculator-form">
                 <div class="form-group">
                     <label for="travel-destination">Destination</label>
-                    <select id="travel-destination">
-                        <option value="">Choose a destination</option>
-                        <option value="Paris">Paris</option>
-                        <option value="Rome">Rome</option>
-                        <option value="Tokyo">Tokyo</option>
-                        <option value="Santorini">Santorini</option>
+                    <select id="travel-destination" class="form-control">
+                        <option value="">Select a destination</option>
                     </select>
                 </div>
 
                 <div class="form-group">
-                    <label for="travelers">Number of Travelers</label>
-                    <input type="number" id="travelers" min="1" value="1">
+                    <label for="travelers-count">Number of Travelers</label>
+                    <input type="number" id="travelers-count" class="form-control"
+                           min="1" value="1">
                 </div>
 
                 <div class="form-group">
                     <label for="trip-days">Number of Days</label>
-                    <input type="number" id="trip-days" min="1" value="5">
+                    <input type="number" id="trip-days" class="form-control"
+                           min="1" value="3">
                 </div>
 
                 <div class="form-group">
-                    <label for="transport-cost">Transportation per Person (€)</label>
-                    <input type="number" id="transport-cost" min="0" placeholder="e.g. 150">
+                    <label for="transport-cost">Transportation Cost per Person (EUR)</label>
+                    <input type="number" id="transport-cost" class="form-control"
+                           min="0" value="0">
                 </div>
 
                 <div class="form-group">
-                    <label for="accommodation-cost">Accommodation per Person per Night (€)</label>
-                    <input type="number" id="accommodation-cost" min="0" placeholder="e.g. 40">
+                    <label for="accommodation-cost">Accommodation per Person / Night (EUR)</label>
+                    <input type="number" id="accommodation-cost" class="form-control"
+                           min="0" value="0">
                 </div>
 
                 <div class="form-group">
-                    <label for="food-cost">Food per Person per Day (€)</label>
-                    <input type="number" id="food-cost" min="0" placeholder="e.g. 25">
+                    <label for="food-cost">Food per Person / Day (EUR)</label>
+                    <input type="number" id="food-cost" class="form-control"
+                           min="0" value="0">
                 </div>
 
                 <div class="form-group">
-                    <label for="other-cost">Other Expenses per Person (€)</label>
-                    <input type="number" id="other-cost" min="0" placeholder="e.g. 50">
+                    <label for="other-cost">Other Expenses per Person (EUR)</label>
+                    <input type="number" id="other-cost" class="form-control"
+                           min="0" value="0">
                 </div>
-            </div>
-            <button type="button" id="calculate-travel-cost">Calculate Travel Cost</button>
-            <div id="travel-cost-results">
-               
+
+                <button type="button" class="btn btn-primary" id="calculate-travel-cost">Calculate Cost</button>
+
+                <div id="travel-cost-results"></div>
             </div>
         </div>
     </section>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <h5>Travel Planner</h5>
-                <div class="footer-links">
-                    <a href="../index.html">Home</a>
-                    <a href="destinations.html">Destinations</a>
-                    <a href="guides.html">Guides</a>
-                    <a href="survey.html">Survey</a>
-                </div>
-            </div>
-            <p class="copyright">&copy; 2026 Travel Planner. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog">
+    <div class="modal fade" id="addDestinationModal" tabindex="-1"
+         role="dialog" aria-labelledby="addDestinationModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content login-modal">
-                
+            <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Welcome Back</h5>
-                    <button type="button" class="close" data-dismiss="modal">
-                        <span>&times;</span>
+                    <h5 class="modal-title" id="addDestinationModalLabel">
+                        Add a Destination
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal"
+                            aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
 
                 <div class="modal-body">
-                    <p class="login-description">Login to continue planning your next adventure.</p>
-                    <form id="login-form">
+                    <p>Select a destination that you previously removed.</p>
+
+                    <div class="form-group">
+                        <label for="add-destination-select">Destination</label>
+                        <select id="add-destination-select" class="form-control">
+                            <option value="">Select a destination</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                        Cancel
+                    </button>
+                    <button type="button" class="btn btn-primary" id="confirm-add-destination">
+                        Add Destination
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="../index.html">Home</a>
+                <a href="destinations.html">Destinations</a>
+                <a href="guides.html">Guides</a>
+                <a href="survey.html">Survey</a>
+            </div>
+            <p>&copy; 2026 Travel Planner. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog"
+         aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                    <button type="button" class="close" data-dismiss="modal"
+                            aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <form>
                         <div class="form-group">
-                            <label for="login-email">Email Address</label>
+                            <label for="login-email">Email</label>
                             <input type="email" class="form-control" id="login-email"
-                                placeholder="Enter your email" required>
+                                   placeholder="Enter your email">
                         </div>
 
                         <div class="form-group">
                             <label for="login-password">Password</label>
                             <input type="password" class="form-control" id="login-password"
-                                placeholder="Enter your password" required>
+                                   placeholder="Enter your password">
                         </div>
-                        <button type="submit" class="btn btn-primary btn-block login-button">Login</button>
-                    </form>
-                    <p class="signup-text">
-                        Don't have an account? <a href="#">Sign up</a>
-                    </p>
-                </div>
 
+                        <button type="submit" class="btn btn-primary btn-block">
+                            Login
+                        </button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
