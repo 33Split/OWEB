@@ -1,3 +1,5 @@
+"use strict"
+
 const allDestinations = [
     {
         id: 1,
