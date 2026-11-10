@@ -99,7 +99,7 @@ const allDestinations = [
         price: 190,
         likes: 105,
         dislikes: 6,
-        image: "../images/destinations/chamonix/chamonix.jpg"
+        image: "../images/destinations/chamonix/chamonix-card.webp"
     }
 ];
 
