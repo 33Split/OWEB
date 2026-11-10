@@ -46,7 +46,7 @@ const destinations = [
         currency: "Euro (EUR)",
         bestTime: "April - June, September - October",
         budget: "€80 - €130",
-        heroImage: "../images/destinations/rome/rome.jpg",
+        heroImage: "../images/destinations/rome/rome-hero.jpg",
         intro: "Explore Rome, a historic city filled with ancient ruins, beautiful architecture and Italian culture.",
         overview1: "Rome is one of the most historically important cities in Europe. Its streets are filled with ancient monuments, churches, fountains and impressive squares.",
         overview2: "Visitors can explore the remains of the Roman Empire, enjoy traditional Italian food and experience the lively atmosphere of the city.",
@@ -60,12 +60,12 @@ const destinations = [
             },
             {
                 name: "Trevi Fountain",
-                image: "../images/destinations/rome/trevi-fountain.jpg",
+                image: "../images/destinations/rome/trevi-fountain.webp",
                 description: "A famous Baroque fountain where visitors traditionally throw coins for good luck."
             },
             {
                 name: "Pantheon",
-                image: "../images/destinations/rome/pantheon.jpg",
+                image: "../images/destinations/rome/pantheon.webp",
                 description: "An ancient Roman temple famous for its enormous dome and central opening."
             },
             {
@@ -83,7 +83,7 @@ const destinations = [
         currency: "Japanese Yen (JPY)",
         bestTime: "March - May, September - November",
         budget: "€90 - €140",
-        heroImage: "../images/destinations/tokyo/tokyo.jpg",
+        heroImage: "../images/destinations/tokyo/tokyo-hero.jpg",
         intro: "Experience Tokyo, a modern metropolis where traditional Japanese culture meets futuristic technology.",
         overview1: "Tokyo is Japan's capital and one of the largest metropolitan areas in the world. It is known for its skyscrapers, technology, shopping districts and traditional temples.",
         overview2: "The city offers something for everyone, from quiet gardens and historic shrines to busy streets, restaurants and entertainment districts.",
@@ -97,7 +97,7 @@ const destinations = [
             },
             {
                 name: "Senso-ji Temple",
-                image: "../images/destinations/tokyo/senso-ji.jpg",
+                image: "../images/destinations/tokyo/senso-ji.webp",
                 description: "Tokyo's oldest temple, located in the historic Asakusa district."
             },
             {
@@ -134,7 +134,7 @@ const destinations = [
             },
             {
                 name: "Fira",
-                image: "../images/destinations/santorini/fira.jpg",
+                image: "../images/destinations/santorini/fira.avif",
                 description: "The island's capital, featuring shops, restaurants and impressive caldera views."
             },
             {
@@ -157,7 +157,7 @@ const destinations = [
         currency: "Indonesian Rupiah (IDR)",
         bestTime: "April - October",
         budget: "€40 - €90",
-        heroImage: "../images/destinations/bali/bali.jpg",
+        heroImage: "../images/destinations/bali/bali-hero.webp",
         intro: "Visit Bali, a tropical island known for its beaches, temples, rice terraces and natural beauty.",
         overview1: "Bali is one of Indonesia's most popular travel destinations. It offers tropical landscapes, traditional villages, beautiful beaches and a unique local culture.",
         overview2: "Visitors can explore ancient temples, hike volcanic mountains, relax by the ocean and discover the island's famous rice terraces.",
@@ -171,17 +171,17 @@ const destinations = [
             },
             {
                 name: "Tegallalang Rice Terraces",
-                image: "../images/destinations/bali/tegallalang.jpg",
+                image: "../images/destinations/bali/tegallalang.webp",
                 description: "Beautiful green rice fields arranged across the hillsides."
             },
             {
                 name: "Monkey Forest",
-                image: "../images/destinations/bali/monkey-forest.jpg",
+                image: "../images/destinations/bali/monkey-forest.webp",
                 description: "A natural forest sanctuary in Ubud that is home to hundreds of monkeys."
             },
             {
                 name: "Mount Batur",
-                image: "../images/destinations/bali/mount-batur.jpg",
+                image: "../images/destinations/bali/mount-batur.webp",
                 description: "An active volcano popular for sunrise hikes and views of the surrounding landscape."
             }
         ]
@@ -203,7 +203,7 @@ const destinations = [
         attractions: [
             {
                 name: "Matterhorn",
-                image: "../images/destinations/swiss/matterhorn.jpg",
+                image: "../images/destinations/swiss/matterhorn.avif",
                 description: "One of the most recognizable mountain peaks in the world."
             },
             {
@@ -218,7 +218,7 @@ const destinations = [
             },
             {
                 name: "Aletsch Glacier",
-                image: "../images/destinations/swiss/aletsch-glacier.jpg",
+                image: "../images/destinations/swiss/aletsch-glacier.webp",
                 description: "The largest glacier in the Alps, surrounded by impressive mountain scenery."
             }
         ]
@@ -240,12 +240,12 @@ const destinations = [
         attractions: [
             {
                 name: "Geirangerfjord",
-                image: "../images/destinations/norway/geirangerfjord.jpg",
+                image: "../images/destinations/norway/geirangerfjord.webp",
                 description: "A spectacular fjord surrounded by steep mountains and famous waterfalls."
             },
             {
                 name: "Nærøyfjord",
-                image: "../images/destinations/norway/naeroyfjord.jpg",
+                image: "../images/destinations/norway/nærøyfjord.jpg",
                 description: "A narrow fjord known for its dramatic scenery and peaceful surroundings."
             },
             {
@@ -277,7 +277,7 @@ const destinations = [
         attractions: [
             {
                 name: "Fushimi Inari Shrine",
-                image: "../images/destinations/kyoto/fushimi-inari.jpg",
+                image: "../images/destinations/kyoto/fushimi-inari.avif",
                 description: "A famous shrine known for its thousands of red torii gates along mountain paths."
             },
             {
@@ -287,12 +287,12 @@ const destinations = [
             },
             {
                 name: "Kinkaku-ji",
-                image: "../images/destinations/kyoto/kinkakuji.jpg",
+                image: "../images/destinations/kyoto/kinkakuji.webp",
                 description: "A famous golden temple reflected in the pond surrounding it."
             },
             {
                 name: "Kiyomizu-dera",
-                image: "../images/destinations/kyoto/kiyomizu-dera.jpg",
+                image: "../images/destinations/kyoto/kiyomizu-dera.jpeg",
                 description: "A historic Buddhist temple offering beautiful views over Kyoto."
             }
         ]
@@ -319,18 +319,18 @@ const destinations = [
             },
             {
                 name: "Lake Brienz",
-                image: "../images/destinations/interlaken/lake-brienz.jpg",
+                image: "../images/destinations/interlaken/lake-brienz.webp",
                 description: "A beautiful turquoise lake surrounded by mountains and small villages."
             },
             {
                 name: "Lake Thun",
-                image: "../images/destinations/interlaken/lake-thun.jpg",
+                image: "../images/destinations/interlaken/lake-thun.avif",
                 description: "A large alpine lake known for its scenic boat trips and lakeside towns."
             },
             {
-                name: "Jungfraujoch",
-                image: "../images/destinations/interlaken/jungfraujoch.jpg",
-                description: "A high-altitude mountain destination with spectacular views of the Alps."
+                name: "St. Beatus Caves",
+                image: "../images/destinations/interlaken/beatus-caves.jpg",
+                description: "A fascinating cave system featuring underground lakes, waterfalls and impressive rock formations."
             }
         ]
     },
@@ -342,7 +342,7 @@ const destinations = [
         currency: "Euro (EUR)",
         bestTime: "December - March, June - September",
         budget: "€100 - €160",
-        heroImage: "../images/destinations/chamonix/chamonix.jpg",
+        heroImage: "../images/destinations/chamonix/chamonix-hero.jpg",
         intro: "Discover Chamonix, a French mountain town located at the foot of Mont Blanc.",
         overview1: "Chamonix is a popular destination for mountain lovers, surrounded by impressive peaks, glaciers and alpine scenery.",
         overview2: "Visitors can enjoy skiing, hiking, cable car rides and views of Mont Blanc, the highest mountain in the Alps.",
@@ -356,7 +356,7 @@ const destinations = [
             },
             {
                 name: "Mer de Glace",
-                image: "../images/destinations/chamonix/mer-de-glace.jpg",
+                image: "../images/destinations/chamonix/mer-de-glace.avif",
                 description: "A large glacier that can be explored through scenic mountain railway trips."
             },
             {
@@ -366,7 +366,7 @@ const destinations = [
             },
             {
                 name: "Chamonix Centre",
-                image: "../images/destinations/chamonix/chamonix-centre.jpg",
+                image: "../images/destinations/chamonix/chamonix-centre.webp",
                 description: "The town centre, filled with shops, restaurants and traditional alpine architecture."
             }
         ]
