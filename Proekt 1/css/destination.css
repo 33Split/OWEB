@@ -87,6 +87,18 @@
     font-weight: 600;
     text-align: right;
 }
+.guide-link {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #007bff;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.guide-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
 
 /* Popular Attractions */
 .destination-attractions {
