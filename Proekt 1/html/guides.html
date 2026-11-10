@@ -30,7 +30,7 @@
                     <a class="nav-link" href="survey.html">Survey</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" data-toggle="modal" data-target="#loginModal">Login</a>
+                    <a class="nav-link" href="#" id="login-nav-link">Login</a>
                 </li>
             </ul>
         </div>
@@ -531,7 +531,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-6 order-lg-2">
                     <div class="guide-image">
-                        <img src="../images/destinations/chamonix/chamonix.jpg" alt="Chamonix mountain landscape">
+                        <img src="../images/destinations/chamonix/chamonix-guide.jpg" alt="Chamonix mountain landscape">
                     </div>
                 </div>
 
@@ -608,11 +608,14 @@
                     <p class="login-description">Login to continue planning your next adventure.</p>
                     <form id="login-form">
                         <div class="form-group">
+                            <label for="login-username">Username</label>
+                            <input type="text" class="form-control" id="login-username" required>
+                        </div>
+                        <div class="form-group">
                             <label for="login-email">Email Address</label>
                             <input type="email" class="form-control" id="login-email"
                                 placeholder="Enter your email" required>
                         </div>
-
                         <div class="form-group">
                             <label for="login-password">Password</label>
                             <input type="password" class="form-control" id="login-password"
