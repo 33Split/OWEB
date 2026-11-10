@@ -29,7 +29,7 @@
                     <a class="nav-link" href="html/survey.html">Survey</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" data-toggle="modal" data-target="#loginModal">Login</a>
+                    <a class="nav-link" href="#" id="login-nav-link">Login</a>
                 </li>
             </ul>
         </div>
@@ -136,7 +136,7 @@
                         Explore ancient temples, peaceful gardens and traditional
                         streets in Japan's historic cultural capital.
                     </p>
-                    <a href="html/guides.html" class="guide-link">Read the Guide &rarr;</a>
+                    <a href="html/guides.html#kyoto-guide" class="guide-link">Read the Guide &rarr;</a>
                 </div>
             </div>
         </div>
@@ -172,11 +172,14 @@
                     <p class="login-description">Login to continue planning your next adventure.</p>
                     <form id="login-form">
                         <div class="form-group">
+                            <label for="login-username">Username</label>
+                            <input type="text" class="form-control" id="login-username" required>
+                        </div>
+                        <div class="form-group">
                             <label for="login-email">Email Address</label>
                             <input type="email" class="form-control" id="login-email"
                                 placeholder="Enter your email" required>
                         </div>
-
                         <div class="form-group">
                             <label for="login-password">Password</label>
                             <input type="password" class="form-control" id="login-password"
