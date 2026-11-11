@@ -143,7 +143,9 @@ function displayDestinations() {
     );
 
     if (currentSort === "popularity") {
-        displayedDestinations.sort((a, b) => b.likes - a.likes);
+        displayedDestinations.sort(
+            (a, b) => getDestinationLikes(b) - getDestinationLikes(a)
+        );
     }
     else if (currentSort === "price-asc") {
         displayedDestinations.sort((a, b) => a.price - b.price);
@@ -178,7 +180,7 @@ function displayDestinations() {
 
                         <div class="destination-card-info">
                             <span>From €${destination.price}</span>
-                            <span>${destination.likes} likes</span>
+                            <span>${getDestinationLikes(destination)} likes</span>
                         </div>
                     </div>
                 </a>
@@ -383,4 +385,20 @@ calculateButton.addEventListener("click", function() {
         <p>Number of travelers: ${travelers}</p>
         <h4>Total cost: €${totalCost.toFixed(2)}</h4>
     `;
+});
+
+function getDestinationLikes(destination) {
+    const ratings = JSON.parse(localStorage.getItem("destinationRatings")) || {};
+
+    if (ratings[destination.id]) {
+        return ratings[destination.id].likes;
+    }
+
+    return destination.likes;
+}
+
+window.addEventListener("storage", function(event) {
+    if (event.key === "destinationRatings") {
+        displayDestinations();
+    }
 });
