@@ -8,7 +8,7 @@ const destinations = [
         language: "French",
         currency: "Euro (EUR)",
         bestTime: "April - June",
-        budget: "€100 - €150",
+        budget: "€190 - €210",
         heroImage: "../images/destinations/paris/paris-hero1.jpg",
         intro: "Discover Paris, the city of love, art, fashion and unforgettable landmarks.",
         overview1: "Paris is one of the most visited cities in the world, famous for its beautiful architecture, museums, cafes and romantic atmosphere.",
@@ -45,7 +45,7 @@ const destinations = [
         language: "Italian",
         currency: "Euro (EUR)",
         bestTime: "April - June, September - October",
-        budget: "€80 - €130",
+        budget: "€170 - €190",
         heroImage: "../images/destinations/rome/rome-hero.jpg",
         intro: "Explore Rome, a historic city filled with ancient ruins, beautiful architecture and Italian culture.",
         overview1: "Rome is one of the most historically important cities in Europe. Its streets are filled with ancient monuments, churches, fountains and impressive squares.",
@@ -82,7 +82,7 @@ const destinations = [
         language: "Japanese",
         currency: "Japanese Yen (JPY)",
         bestTime: "March - May, September - November",
-        budget: "€90 - €140",
+        budget: "€240 - €260",
         heroImage: "../images/destinations/tokyo/tokyo-hero.jpg",
         intro: "Experience Tokyo, a modern metropolis where traditional Japanese culture meets futuristic technology.",
         overview1: "Tokyo is Japan's capital and one of the largest metropolitan areas in the world. It is known for its skyscrapers, technology, shopping districts and traditional temples.",
@@ -119,8 +119,8 @@ const destinations = [
         language: "Greek",
         currency: "Euro (EUR)",
         bestTime: "May - October",
-        budget: "€100 - €160",
-        heroImage: "../images/destinations/santorini/santorini.jpg",
+        budget: "€210 - €230",
+        heroImage: "../images/destinations/santorini/santorini-hero.jpg",
         intro: "Discover Santorini, a Greek island known for its white buildings, blue domes and beautiful sunsets.",
         overview1: "Santorini is a volcanic island in the Aegean Sea, famous for its dramatic cliffs, traditional villages and spectacular views of the caldera.",
         overview2: "Visitors can relax on unique beaches, explore small villages, enjoy Greek food and watch the sunset over the sea.",
@@ -156,7 +156,7 @@ const destinations = [
         language: "Indonesian",
         currency: "Indonesian Rupiah (IDR)",
         bestTime: "April - October",
-        budget: "€40 - €90",
+        budget: "€260 - €280",
         heroImage: "../images/destinations/bali/bali-hero.webp",
         intro: "Visit Bali, a tropical island known for its beaches, temples, rice terraces and natural beauty.",
         overview1: "Bali is one of Indonesia's most popular travel destinations. It offers tropical landscapes, traditional villages, beautiful beaches and a unique local culture.",
@@ -193,7 +193,7 @@ const destinations = [
         language: "German, French, Italian",
         currency: "Swiss Franc (CHF)",
         bestTime: "December - March, June - September",
-        budget: "€120 - €200",
+        budget: "€230 - €250",
         heroImage: "../images/destinations/swiss/swiss-alps.webp",
         intro: "Explore the Swiss Alps, a spectacular mountain region known for its scenery and outdoor activities.",
         overview1: "The Swiss Alps are famous for their snow-covered peaks, mountain villages, clear lakes and scenic hiking trails.",
@@ -230,7 +230,7 @@ const destinations = [
         language: "Norwegian",
         currency: "Norwegian Krone (NOK)",
         bestTime: "May - September",
-        budget: "€100 - €170",
+        budget: "€200 - €220",
         heroImage: "../images/destinations/norway/norwegian-fjords.jpg",
         intro: "Discover Norway's fjords, famous for their dramatic cliffs, deep blue waters and impressive landscapes.",
         overview1: "Norway's fjords are natural sea inlets surrounded by steep mountains and waterfalls. They create some of the most impressive landscapes in Northern Europe.",
@@ -267,7 +267,7 @@ const destinations = [
         language: "Japanese",
         currency: "Japanese Yen (JPY)",
         bestTime: "March - May, October - November",
-        budget: "€70 - €120",
+        budget: "€245 - €265",
         heroImage: "../images/destinations/kyoto/kyoto.jpg",
         intro: "Experience Kyoto, a historic Japanese city filled with temples, gardens and traditional architecture.",
         overview1: "Kyoto was once Japan's capital and remains one of the country's most important cultural destinations. It is known for its temples, traditional streets and beautiful gardens.",
@@ -304,7 +304,7 @@ const destinations = [
         language: "German",
         currency: "Swiss Franc (CHF)",
         bestTime: "June - September",
-        budget: "€110 - €180",
+        budget: "€220 - €240",
         heroImage: "../images/destinations/interlaken/interlaken.webp",
         intro: "Visit Interlaken, a Swiss town surrounded by lakes and mountains, popular for outdoor adventures.",
         overview1: "Interlaken is located between Lake Thun and Lake Brienz, with the Swiss Alps providing a spectacular background.",
@@ -341,7 +341,7 @@ const destinations = [
         language: "French",
         currency: "Euro (EUR)",
         bestTime: "December - March, June - September",
-        budget: "€100 - €160",
+        budget: "€180 - €200",
         heroImage: "../images/destinations/chamonix/chamonix-hero.jpg",
         intro: "Discover Chamonix, a French mountain town located at the foot of Mont Blanc.",
         overview1: "Chamonix is a popular destination for mountain lovers, surrounded by impressive peaks, glaciers and alpine scenery.",
@@ -496,6 +496,7 @@ function displayRating() {
 }
 
 function voteForDestination(vote) {
+    
     let ratings = JSON.parse(localStorage.getItem("destinationRatings")) || {};
 
     if (!ratings[destination.id]) {
@@ -509,22 +510,28 @@ function voteForDestination(vote) {
     const rating = ratings[destination.id];
 
     if (rating.userVote === vote) {
-        return;
-    }
+        if (vote === "like") {
+            rating.likes--;
+        } else {
+            rating.dislikes--;
+        }
 
-    if (rating.userVote === "like") {
-        rating.likes--;
-    } else if (rating.userVote === "dislike") {
-        rating.dislikes--;
-    }
+        rating.userVote = null;
+    } else {
+        if (rating.userVote === "like") {
+            rating.likes--;
+        } else if (rating.userVote === "dislike") {
+            rating.dislikes--;
+        }
 
-    if (vote === "like") {
-        rating.likes++;
-    } else if (vote === "dislike") {
-        rating.dislikes++;
-    }
+        if (vote === "like") {
+            rating.likes++;
+        } else {
+            rating.dislikes++;
+        }
 
-    rating.userVote = vote;
+        rating.userVote = vote;
+    }
 
     localStorage.setItem("destinationRatings", JSON.stringify(ratings));
 
